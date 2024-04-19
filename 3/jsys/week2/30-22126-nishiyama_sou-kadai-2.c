@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main(void){
+	typedef struct vxyz{
+		char v[11];
+		int x;
+		unsigned int y;
+		double z;
+	} Four;
+
+	Four a;
+
+	scanf("%s %d %u %lf", a.v, &a.x, &a.y, &a.z);
+
+	while (1 == 1){
+		char tmp;
+		printf("値を表示するメンバ名を入力: ");
+		scanf(" %c", &tmp);
+		if (tmp == 'v'){
+			printf("char型のメンバvの値: %s\n", a.v);
+		} else if (tmp == 'x'){
+			printf("int型のメンバxの値: %d\n", a.x);
+		} else if (tmp == 'y'){
+			printf("unsigned int型のメンバyの値: %u\n", a.y);
+		} else if (tmp == 'z'){
+			printf("double型のメンバzの値: %lf\n", a.z);
+		} else {
+			printf("表示終了\n");
+			return 0;
+		}
+	}	
+}
