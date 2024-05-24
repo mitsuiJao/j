@@ -10,6 +10,7 @@ int main(void){
 
 	Four a;
 
+	printf("char型、int型、unsigned int型、doubule型の順に値を入力\n");
 	scanf("%s %d %u %lf", a.v, &a.x, &a.y, &a.z);
 
 	while (1 == 1){

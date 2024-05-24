@@ -1,5 +1,21 @@
 #include <stdio.h>
 
+int sum(int i, int n){
+	int tmp = 0;
+	for (i; i<n+1; i++){
+		tmp += i;
+	}
+	return tmp;
+}
+
+int mult(int i, int n){
+	int tmp = 1;
+	for (i; i<n+1; i++){
+		tmp *= i;
+	}
+	return tmp;
+}
+
 int main(void){
 	int i, n;
 	printf("1つ目の自然数を入力："); 
@@ -26,18 +42,4 @@ int main(void){
 	return 0;
 }
 
-int sum(int i, int n){
-	int tmp = 0;
-	for (i; i<n+1; i++){
-		tmp += i;
-	}
-	return tmp;
-}
 
-int mult(int i, int n){
-	int tmp = 1;
-	for (i; i<n+1; i++){
-		tmp *= i;
-	}
-	return tmp;
-}
