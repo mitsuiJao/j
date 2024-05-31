@@ -35,6 +35,7 @@ double avg (double a, double b, double c){
 int main(void){
 	double a,b,c;
 	int flg;
+	printf("type three numbers");
 	scanf("%lf %lf %lf", &a, &b, &c);
 	printf("max: 1, min: 2, sum: 3, avg: 4 \n");
 	scanf("%d", &flg);

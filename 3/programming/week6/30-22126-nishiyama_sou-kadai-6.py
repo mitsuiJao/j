@@ -21,7 +21,7 @@ def ownSum(a,b,c):
 def ownAvg(a,b,c):
 	return ownSum(a,b,c)/3
 
-
+print("type three numbers")
 a = float(input())
 b = float(input())
 c = float(input())
