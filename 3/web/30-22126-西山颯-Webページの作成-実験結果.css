@@ -1,0 +1,54 @@
+body {
+    background-color: lightyellow;
+}
+
+.container {
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.mail {
+    background-color: skyblue;
+    width: 960px;
+    margin: 10px auto;
+    border: 1px solid black;
+    padding: 0 30px;
+}
+
+.mail label {
+    display: block;
+    margin: 0 0 0.5em 0;
+}
+
+.mail input {
+    width: 100%;
+    margin: 0 0 0.5em 0;
+    padding: 8px;
+    border: 1px solid black;
+    font-size: 1.2em;
+}
+
+.mail button {
+    background-color: brown;
+    width: 100%;
+    margin: 1em 0;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 3px;
+    box-shadow: 0 0 20px 0 yellow;
+    color: white;
+    outline: none;
+}
+
+.mail button:hover {
+    background-color: blue;
+    color: gold;
+    box-shadow: none;
+}
+
+.mail button:active {
+    background-color: green;
+    color: silver;
+    box-shadow: 0 0 20px 0 pink;
+}

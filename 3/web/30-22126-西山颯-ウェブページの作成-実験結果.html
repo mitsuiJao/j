@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html lang="jp">
+
 <head>
     <meta charset="UTF-8">
     <title>30-22126-西山颯-Webページの作成-実験結果</title>
+    <link rel="stylesheet" href=".sanitize.css">
+    <link rel="stylesheet" href="30-22126-西山颯-Webページの作成-実験結果.css">
 </head>
+
 <body>
-    <h1 align="center">メール配信</h1>
-    <p>以下のような情報をメールにて配信しています。</p>
+    <div class="container">
+        <div class="mail">
+            <h1 align="center">メール配信</h1>
+            <p>以下のような情報をメールにて配信しています。</p>
 
-    <ul>
-        <li>イベントに関する情報</li>
-        <li>学生や教員の活動に関する情報</li>
-        <li>日々の学生生活に関する情報</li>
-    </ul>
+            <ul>
+                <li>イベントに関する情報</li>
+                <li>学生や教員の活動に関する情報</li>
+                <li>日々の学生生活に関する情報</li>
+            </ul>
 
-    <p>配信を希望する場合は必要事項を入力の上、「登録」ボタンを選択してください。</p>
+            <p>配信を希望する場合は必要事項を入力の上、「登録」ボタンを選択してください。</p>
 
-    <label for="mail">メールアドレス<input id="mail", type="email", name="mail"></label>
-    <label for="pass">パスワード<input id="pass", type="password", name="pass"></label> 
+            <label for="mail">メールアドレス<input id="mail" type="email" name="mail"></label>
+            <label for="pass">パスワード<input id="pass" type="password" name="pass"></label>
 
-    <button type="submit">登録</button>
+            <button type="submit">登録</button>
+        </div>
+    </div>
 </body>
+
 </html>
