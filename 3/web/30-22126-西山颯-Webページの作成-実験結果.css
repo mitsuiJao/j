@@ -1,14 +1,17 @@
 body {
+    /* htmlのbodyタグのスタイル */
     background-color: lightyellow;
 }
 
 .container {
+    /* divタグ、containerクラスのスタイル */
     width: 960px;
     margin-right: auto;
     margin-left: auto;
 }
 
 .mail {
+    /* 同上 */
     background-color: skyblue;
     width: 960px;
     margin: 10px auto;
@@ -17,11 +20,13 @@ body {
 }
 
 .mail label {
+    /* mailクラスのlabelタグ */
     display: block;
     margin: 0 0 0.5em 0;
 }
 
 .mail input {
+    /* mailクラスのinputタグ */
     width: 100%;
     margin: 0 0 0.5em 0;
     padding: 8px;
@@ -42,12 +47,14 @@ body {
 }
 
 .mail button:hover {
+    /* mailクラスのbottonタグにオンマウスしたとき、 */
     background-color: blue;
     color: gold;
     box-shadow: none;
 }
 
 .mail button:active {
+    /* mailクラスのbottonタグにクリックしたとき、 */
     background-color: green;
     color: silver;
     box-shadow: 0 0 20px 0 pink;

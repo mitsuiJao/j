@@ -4,17 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <title>30-22126-西山颯-Webページの作成-実験結果</title>
-    <link rel="stylesheet" href=".sanitize.css">
+    <link rel="stylesheet" href="sanitize.css">
     <link rel="stylesheet" href="30-22126-西山颯-Webページの作成-実験結果.css">
 </head>
 
 <body>
     <div class="container">
         <div class="mail">
-            <h1 align="center">メール配信</h1>
+            <!-- containerとmailのクラス -->
+
+            <h1>メール配信</h1>
+            <!-- 見出し -->
+
             <p>以下のような情報をメールにて配信しています。</p>
+            <!-- 段落 -->
 
             <ul>
+                <!-- 無順列の箇条書き -->
                 <li>イベントに関する情報</li>
                 <li>学生や教員の活動に関する情報</li>
                 <li>日々の学生生活に関する情報</li>
@@ -22,9 +28,11 @@
 
             <p>配信を希望する場合は必要事項を入力の上、「登録」ボタンを選択してください。</p>
 
-            <label for="mail">メールアドレス<input id="mail" type="email" name="mail"></label>
-            <label for="pass">パスワード<input id="pass" type="password" name="pass"></label>
-
+            <label for="mail">メールアドレス</label>
+            <input id="mail" type="email" name="mail">
+            <!-- labelで要素をまとめます -->
+            <label for="pass">パスワード</label>
+            <input id="pass" type="password" name="pass">
             <button type="submit">登録</button>
         </div>
     </div>
