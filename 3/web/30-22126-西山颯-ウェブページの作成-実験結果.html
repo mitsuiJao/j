@@ -10,31 +10,112 @@
 
 <body>
     <div class="container">
-        <div class="mail">
-            <!-- containerとmailのクラス -->
+        <header>
+            <nav>
+                <ul class="ddmenu">
+                    <!-- ドロップダウンメニューぢｖ -->
+                    <li><a href="#">学校案内</a>
+                        <ul>
+                            <li><a href="#">米子高専の概要</a></li>
+                            <li><a href="#">校長挨拶</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">学科・専攻科案内</a>
+                        <ul>
+                            <li><a href="https://www.yonago-k.ac.jp/kikai/" target="_blank"
+                                    rel="noopener noreferre">機械工学科</a></li>
+                            <li><a href="https://www.yonago-k.ac.jp/denshi/" target="_blank"
+                                    rel="noopener noreferre">電気情報工学科</a></li>
+                            <li><a href="https://www.yonago-k.ac.jp/denki/" target="_blank"
+                                    rel="noopener noreferre">電子制御工学科</a></li>
+                            <li><a href="https://www.yonago-k.ac.jp/material/" target="_blank"
+                                    rel="noopener noreferre">物質工学科</a></li>
+                            <li><a href="https://www.archi.yonago-k.ac.jp/" target="_blank"
+                                    rel="noopener noreferre">建築学科</a></li>
+                            <li><a href="https://www.yonago-k.ac.jp/a086/a094/" target="_blank"
+                                    rel="noopener noreferre">教養教育科</a></li>
+                            <li><a href="https://www.yonago-k.ac.jp/a086/a095/" target="_blank"
+                                    rel="noopener noreferre">専攻科</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">入学案内</a>
+                        <ul>
+                            <li><a href="#">アドミッションポリシー</a></li>
+                            <li><a href="#">入学試験の概要</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">キャンパスライフ</a>
+                        <ul>
+                            <li><a href="#">年間スケジュール</a></li>
+                            <li><a href="#">学生便覧</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="slider">
+                <div class="slider-w">
+                    <div class="slider-i"><img src="./image/1.jpg" width="960" height="370"></div>
+                    <div class="slider-i"><img src="./image/2.jpg" width="960" height="370"></div>
+                    <div class="slider-i"><img src="./image/3.jpg" width="960" height="370"></div>
+                    <div class="slider-i"><img src="./image/4.jpg" width="960" height="370"></div>
+                    <div class="slider-i"><img src="./image/5.jpg" width="960" height="370"></div>
+                    <div class="slider-i"><img src="./image/6.jpg" width="960" height="370"></div>
+                    <div class="slider-i"><img src="./image/7.jpg" width="960" height="370"></div>
+                </div>
+            </div>
+            <div class="info">
+                <h2>お知らせ Infomation</h2>
+                <table>
+                    <tr>
+                        <td>20/08/07</td>
+                        <td>明日から夏休みです。</td>
+                    </tr>
+                    <tr>
+                        <td>20/08/06</td>
+                        <td>入学式を開催しました。</td>
+                    </tr>
+                    <tr>
+                        <td>20/01/01</td>
+                        <td>新年度が始まりました。</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="pickup">
+                <h2>ピックアップKOSEN!</h2>
+                準備中！
+            </div>
+            <div class="mail">
+                <!-- containerとmailのクラス -->
 
-            <h1>メール配信</h1>
-            <!-- 見出し -->
+                <h1>メール配信</h1>
+                <!-- 見出し -->
 
-            <p>以下のような情報をメールにて配信しています。</p>
-            <!-- 段落 -->
+                <p>以下のような情報をメールにて配信しています。</p>
+                <!-- 段落 -->
 
-            <ul>
-                <!-- 無順列の箇条書き -->
-                <li>イベントに関する情報</li>
-                <li>学生や教員の活動に関する情報</li>
-                <li>日々の学生生活に関する情報</li>
-            </ul>
+                <ul>
+                    <!-- 無順列の箇条書き -->
+                    <li>イベントに関する情報</li>
+                    <li>学生や教員の活動に関する情報</li>
+                    <li>日々の学生生活に関する情報</li>
+                </ul>
 
-            <p>配信を希望する場合は必要事項を入力の上、「登録」ボタンを選択してください。</p>
+                <p>配信を希望する場合は必要事項を入力の上、「登録」ボタンを選択してください。</p>
 
-            <label for="mail">メールアドレス</label>
-            <input id="mail" type="email" name="mail">
-            <!-- labelで要素をまとめます -->
-            <label for="pass">パスワード</label>
-            <input id="pass" type="password" name="pass">
-            <button type="submit">登録</button>
-        </div>
+                <label for="mail">メールアドレス</label>
+                <input id="mail" type="email" name="mail">
+                <!-- labelで要素をまとめます -->
+                <label for="pass">パスワード</label>
+                <input id="pass" type="password" name="pass">
+                <button type="submit">登録</button>
+            </div>
+        </main>
+        <footer>
+            <small>&#12306;683-8502 鳥取県米子市彦名町4448</small> <br>
+            <small>&copy; National Institute of Technology Yonago College</small>
+        </footer>
     </div>
 </body>
 

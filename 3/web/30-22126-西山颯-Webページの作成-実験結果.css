@@ -17,6 +17,7 @@ body {
     margin: 10px auto;
     border: 1px solid black;
     padding: 0 30px;
+    clear: both;
 }
 
 .mail label {
@@ -58,4 +59,149 @@ body {
     background-color: green;
     color: silver;
     box-shadow: 0 0 20px 0 pink;
+}
+
+footer {
+    text-align: center;
+}
+
+header h1 {
+    /* headerとh1の子孫関係 */
+    text-align: center;
+}
+
+
+.ddmenu {
+    /* ddmenuのulクラス全体 */
+    background-color: dimgray;
+    margin: 0px;
+    padding: 0px 15px;
+}
+
+.ddmenu>li {
+    /* ddmenuクラスの直下のliタグに適用 */
+    display: inline-block;
+    position: relative;
+    list-style-type: none;
+    width: 220px;
+}
+
+.ddmenu li:hover ul {
+    /* ddmenuの下のliにホバーしたときのul */
+    display: block;
+}
+
+.ddmenu a {
+    display: block;
+    background-color: dimgray;
+    padding: 0px 30px;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.ddmenu ul {
+    margin: 0px;
+    padding: 0px;
+    display: none;
+    position: absolute;
+    z-index: 1000;
+}
+
+.ddmenu ul li a {
+    /* ddmenuの下のulのliのa */
+    text-align: left;
+    padding-left: 10px;
+    font-weight: normal;
+}
+
+.slider {
+    width: 960px;
+    height: 360px;
+    overflow: hidden;
+}
+
+.slider-w {
+    width: 700%;
+    position: relative;
+    animation: slider 0.5s infinite;
+}
+
+.slider-i {
+    float: left;
+    position: relative;
+}
+
+.info {
+    float: left;
+    width: 50%;
+    height: 200px;
+    background-color: aquamarine;
+    padding: 0 20px;
+    overflow: visible scroll;
+}
+
+.info table {
+    width: 90%;
+    margin: 10px;
+}
+
+.info td {
+    border-bottom: 1px dotted black;
+    padding: 5px;
+}
+
+.pickup {
+    float: left;
+    width: 50%;
+    height: 200px;
+    background-color: red;
+    padding: 0 20px;
+    overflow: visible scroll;
+}
+
+.pickup table {
+    width: 90%;
+    margin: 10px;
+}
+
+.pickup td {
+    border-bottom: 1px dotted black;
+    padding: 5px;
+}
+
+@keyframes slider {
+    0% {
+        transform: translateX(0px);
+    }
+
+    14% {
+        transform: translateX(-960px);
+    }
+
+    28% {
+        transform: translateX(-1920px);
+    }
+
+    42% {
+        transform: translateX(-2880px);
+    }
+
+    56% {
+        transform: translateX(-3840px);
+    }
+
+    70% {
+        transform: translateX(-4800px);
+    }
+
+    84% {
+        transform: translateX(-5760px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
 }
