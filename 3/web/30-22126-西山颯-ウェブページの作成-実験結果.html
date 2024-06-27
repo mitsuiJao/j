@@ -6,9 +6,24 @@
     <title>30-22126-西山颯-Webページの作成-実験結果</title>
     <link rel="stylesheet" href="sanitize.css">
     <link rel="stylesheet" href="30-22126-西山颯-Webページの作成-実験結果.css">
+    <script src="jquery-3.7.1.min.js"></script>
 </head>
 
 <body>
+    <script>
+        $(function () {
+            $(".mail").remove();
+            $("button").on("click", function () {
+                $("body").css("background-color", "green");
+            });
+            $("h1").hover(function () {
+                $("h1").html("米子高専").css("font-style", "italic");
+            });
+        });
+
+    </script>
+
+    </script>
     <div class="container">
         <header>
             <nav>
@@ -113,6 +128,7 @@
             </div>
         </main>
         <footer>
+            <button class="btn">ボタン</button> <br>
             <small>&#12306;683-8502 鳥取県米子市彦名町4448</small> <br>
             <small>&copy; National Institute of Technology Yonago College</small>
         </footer>

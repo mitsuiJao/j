@@ -126,7 +126,7 @@ header h1 {
 .slider-w {
     width: 700%;
     position: relative;
-    animation: slider 0.5s infinite;
+    animation: slider 10s infinite;
 }
 
 .slider-i {
