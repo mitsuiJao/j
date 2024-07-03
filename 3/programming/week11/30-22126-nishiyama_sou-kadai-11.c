@@ -1,5 +1,6 @@
 #include<stdio.h>
 
+
 void maximum(int n, double arr[], double* result){
 	double tmp = arr[0];
     for (int i=1; i<n; i++){
@@ -28,13 +29,15 @@ void sum(int n, double* arr, double* result){
 	*result = tmp;
 }
 
-void sum(int n, double *arr, double* result){
+void avg(int n, double *arr, double* result){
 	double tmp = 0;
     for (int i=0; i<n; i++){
 		tmp += arr[i];	
 	}
 	*result = tmp/n;
 }
+
+
 
 int main(void){
     int n;
@@ -46,7 +49,8 @@ int main(void){
     }
     
     double result;
-	minimum(n, arr, &result);
+
+	avg(n, arr, &result);
 	printf("%lf", result);
 	return 0;
 }
