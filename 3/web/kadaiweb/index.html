@@ -7,7 +7,7 @@
     <title>30-22126-西山颯-Webページの作成-実験結果</title>
     <!-- 必要なcssの読み込み -->
     <link rel="stylesheet" href="sanitize.css">
-    <link rel="stylesheet" href="30-22126-西山颯-Webページの作成-実験結果.css">
+    <link rel="stylesheet" href="style.css">
     <!-- jqueryの読み込み -->
     <script src="jquery-3.7.1.min.js"></script>
 </head>
@@ -27,12 +27,17 @@
                 // チェーンメソッドの使用 ECMAScript準拠である
                 $("h1").html("米子高専").css("font-style", "italic");
             });
+            $(".ddmenu li").hover(function () {
+                $(this).css("background-color", "red");
+            });
         });
     </script>
 
     <div class="container">
         <!-- headerタグ -->
         <header>
+            <h2>米子工業高等専門学校</h2>
+            <h1>情報工学科</h1>
             <nav>
                 <!-- ドロップダウンメニューdiv -->
                 <ul class="ddmenu">
@@ -85,59 +90,45 @@
             <!-- ぐるぐるなるやつ -->
             <div class="slider">
                 <div class="slider-w">
-                    <div class="slider-i"><img src="./image/1.jpg" width="960" height="370"></div>
-                    <div class="slider-i"><img src="./image/2.jpg" width="960" height="370"></div>
-                    <div class="slider-i"><img src="./image/3.jpg" width="960" height="370"></div>
-                    <div class="slider-i"><img src="./image/4.jpg" width="960" height="370"></div>
-                    <div class="slider-i"><img src="./image/5.jpg" width="960" height="370"></div>
-                    <div class="slider-i"><img src="./image/6.jpg" width="960" height="370"></div>
-                    <div class="slider-i"><img src="./image/7.jpg" width="960" height="370"></div>
+                    <div class="slider-i"><img src="../image/1.jpg" width="960" height="370"></div>
+                    <div class="slider-i"><img src="../image/2.jpg" width="960" height="370"></div>
+                    <div class="slider-i"><img src="../image/3.jpg" width="960" height="370"></div>
+                    <div class="slider-i"><img src="../image/4.jpg" width="960" height="370"></div>
+                    <div class="slider-i"><img src="../image/5.jpg" width="960" height="370"></div>
+                    <div class="slider-i"><img src="../image/6.jpg" width="960" height="370"></div>
+                    <div class="slider-i"><img src="../image/7.jpg" width="960" height="370"></div>
                 </div>
             </div>
 
-            <!-- お知らせのやつ -->
-            <div class="info">
-                <h2>お知らせ Infomation</h2>
-                <table>
-                    <tr>
-                        <td>20/08/07</td>
-                        <td>明日から夏休みです。</td>
-                    </tr>
-                    <tr>
-                        <td>20/08/06</td>
-                        <td>入学式を開催しました。</td>
-                    </tr>
-                    <tr>
-                        <td>20/01/01</td>
-                        <td>新年度が始まりました。</td>
-                    </tr>
-                </table>
+            <div class="mainContainer">
+                <div class="main">
+                    <h2>学校案内 School Guide</h2>
+                </div>
+
+                <!-- お知らせのやつ -->
+                <div class="info">
+                    <h2>お知らせ Infomation</h2>
+                    <table>
+                        <tr>
+                            <img src="img/screen.png"></img>
+                            <div class="text">
+                                <td>明日から夏休みです。</td>
+                                <td class="date">20/08/07</td>
+                            </div>
+                        </tr>
+                        <tr>
+                            <td>入学式を開催しました。</td>
+                            <td class="date">20/08/06</td>
+                        </tr>
+                        <tr>
+                            <td>新年度が始まりました。</td>
+                            <td class="date">20/01/01</td>
+                        </tr>
+                    </table>
+                </div>
+
             </div>
 
-            <!-- ピックアップ高専 -->
-            <div class="pickup">
-                <h2>ピックアップKOSEN!</h2>
-                準備中！
-            </div>
-
-            <!-- mail配信 -->
-            <div class="mail">
-                <h1>メール配信</h1>
-                <p>以下のような情報をメールにて配信しています。</p>
-                <ul>
-                    <!-- 無順列の箇条書き -->
-                    <li>イベントに関する情報</li>
-                    <li>学生や教員の活動に関する情報</li>
-                    <li>日々の学生生活に関する情報</li>
-                </ul>
-
-                <p>配信を希望する場合は必要事項を入力の上、「登録」ボタンを選択してください。</p>
-                <label for="mail">メールアドレス</label>
-                <input id="mail" type="email" name="mail">
-                <label for="pass">パスワード</label>
-                <input id="pass" type="password" name="pass">
-                <button type="submit">登録</button>
-            </div>
         </main>
         <!-- footerタグ -->
         <footer>
