@@ -41,36 +41,18 @@ void avg(int n, double *arr, double* result){
 
 int main(void){
     int n;
-	printf("enter an integer 1~5\n");
-	printf("> ");
+	printf("1~5‚Ü‚Å‚Ì®”: ");
     scanf("%d", &n);
     
-	printf("enter %d real numbers: \n", n);
+	printf("%d")
     double arr[n];
     for (int i=0; i<n; i++){
-		printf("> ");
         scanf("%lf", &arr[i]);
     }
- 
-	int swt;
-	printf("choose your action\n");
-	printf("max: 1, min: 2, sum: 3, avg: 4\n");
-	printf("> ");
-	scanf("%d", &swt);
-
-
+    
     double result;
 
-	if (swt == 1){
-		maximum(n, arr, &result);	
-	} else if (swt == 2){
-		minimum(n, arr, &result);
-	} else if(swt == 3){
-		sum(n, arr, &result);
-	} else if(swt == 4){
-		avg(n, arr, &result);
-	}
-
-	printf("%lf\n", result);
+	avg(n, arr, &result);
+	printf("%lf", result);
 	return 0;
 }
