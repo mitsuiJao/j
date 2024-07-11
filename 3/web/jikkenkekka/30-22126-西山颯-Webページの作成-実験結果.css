@@ -50,6 +50,7 @@ body {
     outline: none;
 }
 
+/* :hoverは疑似クラス */
 .mail button:hover {
     /* mailクラスのbottonタグにオンマウスしたとき、 */
     background-color: blue;
