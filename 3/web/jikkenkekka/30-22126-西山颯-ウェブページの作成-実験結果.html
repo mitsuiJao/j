@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <!-- headとmeta -->
+    <meta charset="UTF-8">
+    <title>30-22126-西山颯-Webページの作成-実験結果</title>
+    <!-- 必要なcssの読み込み -->
+    <link rel="stylesheet" href="sanitize.css">
+    <link rel="stylesheet" href="30-22126-西山颯-Webページの作成-実験結果.css">
+    <!-- jqueryの読み込み -->
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <!-- jquery -->
+    <script>
+        $(function () {
+            // mailクラスを削除
+            $(".mail").remove();
+            // ボタンをクリックしたときの処理
+            $("button").on("click", function () {
+                $("body").css("background-color", "green");
+            });
+            // h1をホバーしたときの処理
+            $("h1").hover(function () {
+                // チェーンメソッドの使用 ECMAScript準拠である
+                $("h1").html("米子高専").css("font-style", "italic");
+            });
+        });
+    </script>
+
+    <div class="container">
+        <!-- headerタグ -->
+        <header>
+            <nav>
+                <!-- ドロップダウンメニューdiv -->
+                <ul class="ddmenu">
+                    <!-- href="#"はページのトップに遷移することを示す -->
+                    <li><a href="#">学校案内</a>
+                        <ul>
+                            <li><a href="#">米子高専の概要</a></li>
+                            <li><a href="#">校長挨拶</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">学科・専攻科案内</a>
+                        <ul>
+                            <!-- target="_brankは別のタブでリンクを開くことを示す" -->
+                            <!-- rel="nooperner noreferre"はセキュリティ上つけることが推奨される -->
+                            <!-- 現在、大抵のブラウザは_brankを指定すると標準でnopernerが設定される -->
+                            <li><a href="https://www.yonago-k.ac.jp/kikai/" target="_blank"
+                                    rel="noopener noreferre">機械工学科</a></li>
+                            <li><a href="https://www.yonago-k.ac.jp/denshi/" target="_blank"
+                                    rel="noopener noreferre">電気情報工学科</a></li>
+                            <li><a href="https://www.yonago-k.ac.jp/denki/" target="_blank"
+                                    rel="noopener noreferre">電子制御工学科</a></li>
+                            <li><a href="https://www.yonago-k.ac.jp/material/" target="_blank"
+                                    rel="noopener noreferre">物質工学科</a></li>
+                            <li><a href="https://www.archi.yonago-k.ac.jp/" target="_blank"
+                                    rel="noopener noreferre">建築学科</a></li>
+                            <li><a href="https://www.yonago-k.ac.jp/a086/a094/" target="_blank"
+                                    rel="noopener noreferre">教養教育科</a></li>
+                            <li><a href="https://www.yonago-k.ac.jp/a086/a095/" target="_blank"
+                                    rel="noopener noreferre">専攻科</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">入学案内</a>
+                        <ul>
+                            <li><a href="#">アドミッションポリシー</a></li>
+                            <li><a href="#">入学試験の概要</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">キャンパスライフ</a>
+                        <ul>
+                            <li><a href="#">年間スケジュール</a></li>
+                            <li><a href="#">学生便覧</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- mainタグ -->
+        <main>
+            <!-- ぐるぐるなるやつ -->
+            <div class="slider">
+                <div class="slider-w">
+                    <div class="slider-i"><img src="./image/1.jpg" width="960" height="370"></div>
+                    <div class="slider-i"><img src="./image/2.jpg" width="960" height="370"></div>
+                    <div class="slider-i"><img src="./image/3.jpg" width="960" height="370"></div>
+                    <div class="slider-i"><img src="./image/4.jpg" width="960" height="370"></div>
+                    <div class="slider-i"><img src="./image/5.jpg" width="960" height="370"></div>
+                    <div class="slider-i"><img src="./image/6.jpg" width="960" height="370"></div>
+                    <div class="slider-i"><img src="./image/7.jpg" width="960" height="370"></div>
+                </div>
+            </div>
+
+            <!-- お知らせのやつ -->
+            <div class="info">
+                <h2>お知らせ Infomation</h2>
+                <table>
+                    <tr>
+                        <td>20/08/07</td>
+                        <td>明日から夏休みです。</td>
+                    </tr>
+                    <tr>
+                        <td>20/08/06</td>
+                        <td>入学式を開催しました。</td>
+                    </tr>
+                    <tr>
+                        <td>20/01/01</td>
+                        <td>新年度が始まりました。</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- ピックアップ高専 -->
+            <div class="pickup">
+                <h2>ピックアップKOSEN!</h2>
+                準備中！
+            </div>
+
+            <!-- mail配信 -->
+            <div class="mail">
+                <h1>メール配信</h1>
+                <p>以下のような情報をメールにて配信しています。</p>
+                <ul>
+                    <!-- 無順列の箇条書き -->
+                    <li>イベントに関する情報</li>
+                    <li>学生や教員の活動に関する情報</li>
+                    <li>日々の学生生活に関する情報</li>
+                </ul>
+
+                <p>配信を希望する場合は必要事項を入力の上、「登録」ボタンを選択してください。</p>
+                <label for="mail">メールアドレス</label>
+                <input id="mail" type="email" name="mail">
+                <label for="pass">パスワード</label>
+                <input id="pass" type="password" name="pass">
+                <button type="submit">登録</button>
+            </div>
+        </main>
+        <!-- footerタグ -->
+        <footer>
+            <button class="btn">ボタン</button> <br>
+            <!-- &#00000でunicodeのの対応した記号が使える -->
+            <small>&#12306;683-8502 鳥取県米子市彦名町4448</small> <br>
+            <!-- &copy; でコピーライトの特殊記号が使える -->
+            <!-- ex) &trade; でtmの商標記号が使える -->
+            <small>&copy; National Institute of Technology Yonago College</small>
+        </footer>
+    </div>
+</body>
+
+</html>

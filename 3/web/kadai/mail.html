@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <!-- headとmeta -->
+    <meta charset="UTF-8">
+    <title>30-22126-西山颯-Webページの作成-実験結果</title>
+    <!-- 必要なcssの読み込み -->
+    <link rel="stylesheet" href="sanitize.css">
+    <link rel="stylesheet" href="mail.css">
+    <!-- jqueryの読み込み -->
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="query.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- headerタグ -->
+        <header>
+            <div class="title">
+                <a href="."><img src="img/rogo.png" alt=""></a>
+                <h2><a href=".">米子工業高等専門学校</a></h2>
+                <h1><a href=".">情報工学科</a></h1>
+            </div>
+            <nav>
+                <!-- ドロップダウンメニューdiv -->
+                <ul class="ddmenu">
+                    <!-- href="#"はページのトップに遷移することを示す -->
+                    <li class="ddmenutitle"><a href="#">学校案内</a>
+                        <ul>
+                            <li><a href="#">米子高専の概要</a></li>
+                            <li><a href="#">校長挨拶</a></li>
+                            <li><a href="mail.html">メール配信</a></li>
+                        </ul>
+                    </li>
+                    <li class="ddmenutitle"><a href="#">学科・専攻科案内</a>
+                        <ul>
+                            <!-- target="_brankは別のタブでリンクを開くことを示す" -->
+                            <!-- rel="nooperner noreferre"はセキュリティ上つけることが推奨される -->
+                            <!-- 現在、大抵のブラウザは_brankを指定すると標準でnopernerが設定される -->
+                            <li><a href="https://www.yonago-k.ac.jp/kikai/" target="_blank"
+                                    rel="noopener noreferre">機械工学科</a></li>
+                            <li><a href="https://www.yonago-k.ac.jp/denshi/" target="_blank"
+                                    rel="noopener noreferre">電気情報工学科</a></li>
+                            <li><a href="https://www.yonago-k.ac.jp/denki/" target="_blank"
+                                    rel="noopener noreferre">電子制御工学科</a></li>
+                            <li><a href="https://www.yonago-k.ac.jp/material/" target="_blank"
+                                    rel="noopener noreferre">物質工学科</a></li>
+                            <li><a href="https://www.archi.yonago-k.ac.jp/" target="_blank"
+                                    rel="noopener noreferre">建築学科</a></li>
+                            <li><a href="https://www.yonago-k.ac.jp/a086/a094/" target="_blank"
+                                    rel="noopener noreferre">教養教育科</a></li>
+                            <li><a href="https://www.yonago-k.ac.jp/a086/a095/" target="_blank"
+                                    rel="noopener noreferre">専攻科</a></li>
+                        </ul>
+                    </li>
+                    <li class="ddmenutitle"><a href="#">入学案内</a>
+                        <ul>
+                            <li><a href="#">アドミッションポリシー</a></li>
+                            <li><a href="#">入学試験の概要</a></li>
+                        </ul>
+                    </li>
+                    <li class="ddmenutitle"><a href="#">キャンパスライフ</a>
+                        <ul>
+                            <li><a href="#">年間スケジュール</a></li>
+                            <li><a href="#">学生便覧</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- mainタグ -->
+        <main>
+            <div class="mail">
+                <h1>メール配信</h1>
+                <p>以下のような情報をメールにて配信しています。</p>
+                <ul>
+                    <!-- 無順列の箇条書き -->
+                    <li>イベントに関する情報</li>
+                    <li>学生や教員の活動に関する情報</li>
+                    <li>日々の学生生活に関する情報</li>
+                </ul>
+            
+                <p>配信を希望する場合は必要事項を入力の上、「登録」ボタンを選択してください。</p>
+                <label for="mail">メールアドレス</label>
+                <input id="mail" type="email" name="mail">
+                <label for="pass">パスワード</label>
+                <input id="pass" type="password" name="pass">
+                <button type="submit">登録</button>
+            </div>
+        </main>
+        <!-- footerタグ -->
+        <footer>
+            <div>
+                <!-- &#00000でunicodeのの対応した記号が使える -->
+                <small>&#12306;683-8502 鳥取県米子市彦名町4448</small> <br>
+                <!-- &copy; でコピーライトの特殊記号が使える -->
+                <small>&copy; National Institute of Technology Yonago College</small>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

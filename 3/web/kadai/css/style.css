@@ -1,0 +1,191 @@
+body {
+    /* htmlのbodyタグのスタイル */
+    background-color: white;
+    font-family: メイリオ、ヒラギノ角ゴシック、Arial;
+} 
+
+.title {
+    padding: 10px;
+}
+
+iframe{
+    aspect-ratio: 4/3;
+}
+
+.video {
+    text-align: center;
+}
+
+.title img{
+    height: 100px;
+}
+
+.title a{
+    text-decoration: none;
+    color: black;
+}
+
+.title {
+    font-size: 1.5em;
+}
+
+header h1, h2 {
+    /* headerとh1の子孫関係 */
+    display: inline-block;
+    padding: 10px 5px;
+}
+
+.container {
+    /* divタグ、containerクラスのスタイル */
+    width: 100%; 
+    /* マージンは余白を示す */
+    margin-right: auto;
+    margin-left: auto;
+}
+
+footer {
+    /* 中央揃え */
+    width: 100%;
+    background-color: lightgray;
+    /* position: absolute;
+    bottom: 0; */
+}
+
+footer div {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.ddmenu {
+    /* ddmenuのulクラス全体 */
+    background-color: gray;
+    margin: 0px;
+    padding: 0px 15px;
+}
+
+.ddmenu>li {
+    /* ddmenuクラスの直下のliタグに適用 */
+    /* displayは要素の配置の仕方が変わる */
+    display: inline-block;
+    position: relative;
+    list-style-type: none;
+    width: 24%;
+}
+
+.ddmenu li ul {  
+    /* ddmenuの下のliにホバーしたときのul ここで処理 */
+    /* display: block; */
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: fit-content;
+}
+
+
+.ddmenu a {
+    display: block;
+    background-color: gray;
+    padding: 0px 30px;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.ddmenu ul {
+    margin: 0px;
+    padding: 0px;
+    display: none;
+    position: absolute;
+    z-index: 1000;
+}
+
+.ddmenu ul li a {
+    /* ddmenuの下のulのliのa */
+    text-align: center;
+    font-weight: normal;
+}
+
+.main-img img{
+    display: flex;
+    margin: auto;
+}
+
+.main h2{
+    font-size: 2em;
+}
+
+.info h2{
+    font-size: 2em;
+}
+
+.main {
+    width: 60%;
+    max-width: 700px;
+    margin: 10px 30px;
+    display: block;
+    white-space: normal;
+    line-height: 2.5em;
+}
+
+.info {
+    margin: 10px 30px;
+    width: 35%;
+    height: 100%;
+    float: right;
+}
+
+.info img div {
+    margin: 10px 20px;
+}
+
+.mainContainer div{
+    /* display: inline-block; */
+    vertical-align: top;
+}
+
+.mainContainer{
+    display: flex;
+    width: 70%;
+    margin: 10px auto;
+    white-space: nowrap;
+    height: 100%;
+    min-width: 1200px;
+}
+
+.honbun {
+    /* white-space: normal; */
+    font-size: 1.5em;
+}
+
+.infocontents {
+    /* display: flex; */
+    height: 150px;
+    white-space: normals;
+    position: relative;
+    border-bottom: 3px solid gray;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.infocontents img {
+    aspect-ratio: 4/3;
+    width: 150px;
+    padding: 10px;
+}
+
+.infocontents .date{
+    color: gray;
+}
+
+/* .infotitle {
+    position: absolute;
+    right: 0;
+    top: 0;
+} */
+
+.infocontents div{
+    float: right;
+}
