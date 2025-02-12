@@ -3,6 +3,36 @@
 
 int main(int argc, char** argv){
 	if (argc == 1){
+<<<<<<< HEAD
+<<<<<<< HEAD
+		printf("コマンドライン引数を入力してもう一度実行してください。\n");
+		return 0;
+	}
+	
+
+	char str1[100];
+	strcpy(str1, *(argv+1));
+	printf("str1は'%s'で%u文字です", strlen(str1));
+
+	char str2[100];
+	strcpy(str2, *(argv+2));
+	printf("str2は'%s'で%u文字です", strlen(str1));
+
+	if (strcmp(str1, str2) == 0){
+		printf("str1とstr2は等しいです");
+	} else {
+		printf("str1とstr2は等しくないです");
+	}
+
+	char str3[200];
+	strcpy(str3, str1);
+	printf("str1をstr3としてコピーしました。\nstr3は'%s'", str3);
+
+	strcat(str3, str2);
+	printf("str3とstr2を連結しました。\nstr3は'%s'", str3);
+=======
+=======
+>>>>>>> 78e714058c8d10301ea92d42ac6e158154ebf6c0
 		printf("英数字のコマンドライン引数を入力してもう一度実行してください。\n");
 		return 0;
 	}
@@ -42,6 +72,10 @@ int main(int argc, char** argv){
 	char str2[200];
 	strcat(str1, *(argv+2));
 	printf("str1とargv2を連結しました\nstr1は'%s'です", str1);
+<<<<<<< HEAD
+>>>>>>> 78e714058c8d10301ea92d42ac6e158154ebf6c0
+=======
+>>>>>>> 78e714058c8d10301ea92d42ac6e158154ebf6c0
 
 	return 0;
 }

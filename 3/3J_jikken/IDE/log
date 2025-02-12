@@ -1,0 +1,712 @@
+j22126@raspberrypi:~/3J_jikken/IDE $ ls
+合計 492
+drwxr-xr-x 5 j22126 j22126   4096  7月 18 10:01 .
+drwxr-xr-x 3 j22126 j22126   4096  7月 18 09:11 ..
+drwxr-xr-x 2 j22126 j22126   4096  7月 18 09:12 c_programming
+drwxr-xr-x 2 j22126 j22126   4096  7月 18 09:12 compression_and_decompression
+-rw-r--r-- 1 j22126 j22126 188341  7月 18 10:01 gakumonno_susume.txt
+drwxr-xr-x 2 j22126 j22126   4096  7月 18 09:12 shell_scripts
+-rw-r--r-- 1 j22126 j22126 292650  7月 18 10:00 ukigumo.txt
+j22126@raspberrypi:~/3J_jikken/IDE $ ls -lh gakumonno_susume.txt 
+-rw-r--r-- 1 j22126 j22126 184K  7月 18 10:01 gakumonno_susume.txt
+j22126@raspberrypi:~/3J_jikken/IDE $ alias
+alias c='clear'
+alias clip='xsel --clipboard --input'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
+alias ls='ls --color=auto -la'
+j22126@raspberrypi:~/3J_jikken/IDE $ alias --h
+bash: alias: --: 無効なオプションです
+alias: 使用法: alias [-p] [name[=value] ... ]
+j22126@raspberrypi:~/3J_jikken/IDE $ alias -h
+bash: alias: -h: 無効なオプションです
+alias: 使用法: alias [-p] [name[=value] ... ]
+j22126@raspberrypi:~/3J_jikken/IDE $ alias -p
+alias c='clear'
+alias clip='xsel --clipboard --input'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
+alias ls='ls --color=auto -la'
+j22126@raspberrypi:~/3J_jikken/IDE $ alias ls="ls"
+j22126@raspberrypi:~/3J_jikken/IDE $ ls
+c_programming		       gakumonno_susume.txt  ukigumo.txt
+compression_and_decompression  shell_scripts
+j22126@raspberrypi:~/3J_jikken/IDE $ alias
+alias c='clear'
+alias clip='xsel --clipboard --input'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
+alias ls='ls'
+j22126@raspberrypi:~/3J_jikken/IDE $ ls -lh gakumonno_susume.txt 
+-rw-r--r-- 1 j22126 j22126 184K  7月 18 10:01 gakumonno_susume.txt
+j22126@raspberrypi:~/3J_jikken/IDE $ ls -lh ukigumo.txt 
+-rw-r--r-- 1 j22126 j22126 286K  7月 18 10:00 ukigumo.txt
+j22126@raspberrypi:~/3J_jikken/IDE $ gzip -k ukigumo.txt 
+j22126@raspberrypi:~/3J_jikken/IDE $ ls -ls
+合計 620
+  4 drwxr-xr-x 2 j22126 j22126   4096  7月 18 09:12 c_programming
+  4 drwxr-xr-x 2 j22126 j22126   4096  7月 18 09:12 compression_and_decompression
+184 -rw-r--r-- 1 j22126 j22126 188341  7月 18 10:01 gakumonno_susume.txt
+  4 drwxr-xr-x 2 j22126 j22126   4096  7月 18 09:12 shell_scripts
+288 -rw-r--r-- 1 j22126 j22126 292650  7月 18 10:00 ukigumo.txt
+136 -rw-r--r-- 1 j22126 j22126 135856  7月 18 10:00 ukigumo.txt.gz
+j22126@raspberrypi:~/3J_jikken/IDE $ ls -lg
+合計 620
+drwxr-xr-x 2 j22126   4096  7月 18 09:12 c_programming
+drwxr-xr-x 2 j22126   4096  7月 18 09:12 compression_and_decompression
+-rw-r--r-- 1 j22126 188341  7月 18 10:01 gakumonno_susume.txt
+drwxr-xr-x 2 j22126   4096  7月 18 09:12 shell_scripts
+-rw-r--r-- 1 j22126 292650  7月 18 10:00 ukigumo.txt
+-rw-r--r-- 1 j22126 135856  7月 18 10:00 ukigumo.txt.gz
+j22126@raspberrypi:~/3J_jikken/IDE $ ls -lh
+合計 620K
+drwxr-xr-x 2 j22126 j22126 4.0K  7月 18 09:12 c_programming
+drwxr-xr-x 2 j22126 j22126 4.0K  7月 18 09:12 compression_and_decompression
+-rw-r--r-- 1 j22126 j22126 184K  7月 18 10:01 gakumonno_susume.txt
+drwxr-xr-x 2 j22126 j22126 4.0K  7月 18 09:12 shell_scripts
+-rw-r--r-- 1 j22126 j22126 286K  7月 18 10:00 ukigumo.txt
+-rw-r--r-- 1 j22126 j22126 133K  7月 18 10:00 ukigumo.txt.gz
+j22126@raspberrypi:~/3J_jikken/IDE $ realvnc
+bash: realvnc: コマンドが見つかりません
+j22126@raspberrypi:~/3J_jikken/IDE $ ls
+c_programming		       gakumonno_susume.txt  ukigumo.txt
+compression_and_decompression  shell_scripts	     ukigumo.txt.gz
+j22126@raspberrypi:~/3J_jikken/IDE $ lsw
+bash: lsw: コマンドが見つかりません
+j22126@raspberrypi:~/3J_jikken/IDE $ 
+j22126@raspberrypi:~/3J_jikken/IDE $ ls
+c_programming		       gakumonno_susume.txt  ukigumo.txt
+compression_and_decompression  shell_scripts	     ukigumo.txt.gz
+j22126@raspberrypi:~/3J_jikken/IDE $ time ls
+c_programming		       gakumonno_susume.txt  ukigumo.txt
+compression_and_decompression  shell_scripts	     ukigumo.txt.gz
+
+real	0m0.004s
+user	0m0.004s
+sys	0m0.000s
+j22126@raspberrypi:~/3J_jikken/IDE $ ls
+c_programming		       gakumonno_susume.txt  ukigumo.txt
+compression_and_decompression  shell_scripts	     ukigumo.txt.gz
+j22126@raspberrypi:~/3J_jikken/IDE $ ls -la
+合計 628
+drwxr-xr-x 5 j22126 j22126   4096  7月 18 10:03 .
+drwxr-xr-x 3 j22126 j22126   4096  7月 18 09:11 ..
+drwxr-xr-x 2 j22126 j22126   4096  7月 18 09:12 c_programming
+drwxr-xr-x 2 j22126 j22126   4096  7月 18 09:12 compression_and_decompression
+-rw-r--r-- 1 j22126 j22126 188341  7月 18 10:01 gakumonno_susume.txt
+drwxr-xr-x 2 j22126 j22126   4096  7月 18 09:12 shell_scripts
+-rw-r--r-- 1 j22126 j22126 292650  7月 18 10:00 ukigumo.txt
+-rw-r--r-- 1 j22126 j22126 135856  7月 18 10:00 ukigumo.txt.gz
+j22126@raspberrypi:~/3J_jikken/IDE $ rm ukigumo.txt
+ukigumo.txt     ukigumo.txt.gz  
+j22126@raspberrypi:~/3J_jikken/IDE $ rm ukigumo.txt.gz 
+j22126@raspberrypi:~/3J_jikken/IDE $ ls
+c_programming		       gakumonno_susume.txt  ukigumo.txt
+compression_and_decompression  shell_scripts
+j22126@raspberrypi:~/3J_jikken/IDE $ ls -la
+合計 492
+drwxr-xr-x 5 j22126 j22126   4096  7月 18 10:22 .
+drwxr-xr-x 3 j22126 j22126   4096  7月 18 09:11 ..
+drwxr-xr-x 2 j22126 j22126   4096  7月 18 09:12 c_programming
+drwxr-xr-x 2 j22126 j22126   4096  7月 18 09:12 compression_and_decompression
+-rw-r--r-- 1 j22126 j22126 188341  7月 18 10:01 gakumonno_susume.txt
+drwxr-xr-x 2 j22126 j22126   4096  7月 18 09:12 shell_scripts
+-rw-r--r-- 1 j22126 j22126 292650  7月 18 10:00 ukigumo.txt
+j22126@raspberrypi:~/3J_jikken/IDE $ ls -la
+合計 492
+drwxr-xr-x 5 j22126 j22126   4096  7月 18 10:22 .
+drwxr-xr-x 3 j22126 j22126   4096  7月 18 09:11 ..
+drwxr-xr-x 2 j22126 j22126   4096  7月 18 09:12 c_programming
+drwxr-xr-x 2 j22126 j22126   4096  7月 18 09:12 compression_and_decompression
+-rw-r--r-- 1 j22126 j22126 188341  7月 18 10:01 gakumonno_susume.txt
+drwxr-xr-x 2 j22126 j22126   4096  7月 18 09:12 shell_scripts
+-rw-r--r-- 1 j22126 j22126 292650  7月 18 10:00 ukigumo.txt
+j22126@raspberrypi:~/3J_jikken/IDE $ ls -laG
+合計 492
+drwxr-xr-x 5 j22126   4096  7月 18 10:22 .
+drwxr-xr-x 3 j22126   4096  7月 18 09:11 ..
+drwxr-xr-x 2 j22126   4096  7月 18 09:12 c_programming
+drwxr-xr-x 2 j22126   4096  7月 18 09:12 compression_and_decompression
+-rw-r--r-- 1 j22126 188341  7月 18 10:01 gakumonno_susume.txt
+drwxr-xr-x 2 j22126   4096  7月 18 09:12 shell_scripts
+-rw-r--r-- 1 j22126 292650  7月 18 10:00 ukigumo.txt
+j22126@raspberrypi:~/3J_jikken/IDE $ alias
+alias c='clear'
+alias clip='xsel --clipboard --input'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
+alias ls='ls'
+j22126@raspberrypi:~/3J_jikken/IDE $ alias ls="ls --color=auto"
+j22126@raspberrypi:~/3J_jikken/IDE $ ls
+c_programming                  gakumonno_susume.txt  ukigumo.txt
+compression_and_decompression  shell_scripts
+j22126@raspberrypi:~/3J_jikken/IDE $ ls -la
+合計 492
+drwxr-xr-x 5 j22126 j22126   4096  7月 18 10:22 .
+drwxr-xr-x 3 j22126 j22126   4096  7月 18 09:11 ..
+drwxr-xr-x 2 j22126 j22126   4096  7月 18 09:12 c_programming
+drwxr-xr-x 2 j22126 j22126   4096  7月 18 09:12 compression_and_decompression
+-rw-r--r-- 1 j22126 j22126 188341  7月 18 10:01 gakumonno_susume.txt
+drwxr-xr-x 2 j22126 j22126   4096  7月 18 09:12 shell_scripts
+-rw-r--r-- 1 j22126 j22126 292650  7月 18 10:00 ukigumo.txt
+j22126@raspberrypi:~/3J_jikken/IDE $ ls ~/Downloads/
+'01_'$'\322\342\362\322\351\355\322\351\361\322\342\275\322\374\253''գ'$'\272\376\251\253\322\374\277''զ'$'\362\332\373\357'
+ 01_ファイルの圧縮と展開.zip
+ 2023-02-21-raspios-bullseye-armhf-lite.img.xz
+ 8cacd0df06090910.pdf
+ aozorabunko_text_files.tar
+ chromeremotedesktophost.msi
+ eayufontpack.exe
+j22126@raspberrypi:~/3J_jikken/IDE $ rm ~/Downloads/01_
+01_��������������գ�������զ����/ 01_ファイルの圧縮と展開.zip
+j22126@raspberrypi:~/3J_jikken/IDE $ rm ~/Downloads/01_
+01_��������������գ�������զ����/ 01_ファイルの圧縮と展開.zip
+j22126@raspberrypi:~/3J_jikken/IDE $ rm ~/Downloads/01_
+01_��������������գ�������զ����/ 01_ファイルの圧縮と展開.zip
+j22126@raspberrypi:~/3J_jikken/IDE $ mv ~/Downloads/aozorabunko_text_files.tar 
+mv: '/home/j22126/Downloads/aozorabunko_text_files.tar' の後に宛先のファイルオペランドがありません
+Try 'mv --help' for more information.
+j22126@raspberrypi:~/3J_jikken/IDE $ mv ~/Downloads/aozorabunko_text_files.tar .
+j22126@raspberrypi:~/3J_jikken/IDE $ mv ~/Downloads/2023-02-21-raspios-bullseye-armhf-lite.img.xz 
+mv: '/home/j22126/Downloads/2023-02-21-raspios-bullseye-armhf-lite.img.xz' の後に宛先のファイルオペランドがありません
+Try 'mv --help' for more information.
+j22126@raspberrypi:~/3J_jikken/IDE $ mv ~/Downloads/2023-02-21-raspios-bullseye-armhf-lite.img.xz .
+j22126@raspberrypi:~/3J_jikken/IDE $ ls
+2023-02-21-raspios-bullseye-armhf-lite.img.xz  compression_and_decompression  ukigumo.txt
+aozorabunko_text_files.tar                     gakumonno_susume.txt
+c_programming                                  shell_scripts
+j22126@raspberrypi:~/3J_jikken/IDE $ time xz -d 2023-02-21-raspios-bullseye-armhf-lite.img.xz 
+
+real	0m55.167s
+user	0m48.348s
+sys	0m6.403s
+j22126@raspberrypi:~/3J_jikken/IDE $ xz -k gakumonno_susume.txt 
+j22126@raspberrypi:~/3J_jikken/IDE $ rm gakumonno_susume.txt
+gakumonno_susume.txt     gakumonno_susume.txt.xz  
+j22126@raspberrypi:~/3J_jikken/IDE $ rm gakumonno_susume.txt.xz 
+j22126@raspberrypi:~/3J_jikken/IDE $ time xz gakumonno_susume.txt -k
+
+real	0m0.222s
+user	0m0.167s
+sys	0m0.053s
+j22126@raspberrypi:~/3J_jikken/IDE $ ls
+2023-02-21-raspios-bullseye-armhf-lite.img  compression_and_decompression  shell_scripts
+aozorabunko_text_files.tar                  gakumonno_susume.txt           ukigumo.txt
+c_programming                               gakumonno_susume.txt.xz
+j22126@raspberrypi:~/3J_jikken/IDE $ ls -la
+合計 1273780
+drwxr-xr-x 5 j22126 j22126       4096  7月 18 10:27 .
+drwxr-xr-x 3 j22126 j22126       4096  7月 18 09:11 ..
+-rw-r--r-- 1 j22126 j22126 1962934272  7月 18 10:21 2023-02-21-raspios-bullseye-armhf-lite.img
+-rw-r--r-- 1 j22126 j22126      92117  7月 18 10:21 aozorabunko_text_files.tar
+drwxr-xr-x 2 j22126 j22126       4096  7月 18 09:12 c_programming
+drwxr-xr-x 2 j22126 j22126       4096  7月 18 09:12 compression_and_decompression
+-rw-r--r-- 1 j22126 j22126     188341  7月 18 10:01 gakumonno_susume.txt
+-rw-r--r-- 1 j22126 j22126      65168  7月 18 10:01 gakumonno_susume.txt.xz
+drwxr-xr-x 2 j22126 j22126       4096  7月 18 09:12 shell_scripts
+-rw-r--r-- 1 j22126 j22126     292650  7月 18 10:00 ukigumo.txt
+j22126@raspberrypi:~/3J_jikken/IDE $ rm gakumonno_susume.txt.xz 
+j22126@raspberrypi:~/3J_jikken/IDE $ ls
+2023-02-21-raspios-bullseye-armhf-lite.img  compression_and_decompression  ukigumo.txt
+aozorabunko_text_files.tar                  gakumonno_susume.txt
+c_programming                               shell_scripts
+j22126@raspberrypi:~/3J_jikken/IDE $ ls -la
+合計 1273716
+drwxr-xr-x 5 j22126 j22126       4096  7月 18 10:28 .
+drwxr-xr-x 3 j22126 j22126       4096  7月 18 09:11 ..
+-rw-r--r-- 1 j22126 j22126 1962934272  7月 18 10:21 2023-02-21-raspios-bullseye-armhf-lite.img
+-rw-r--r-- 1 j22126 j22126      92117  7月 18 10:21 aozorabunko_text_files.tar
+drwxr-xr-x 2 j22126 j22126       4096  7月 18 09:12 c_programming
+drwxr-xr-x 2 j22126 j22126       4096  7月 18 09:12 compression_and_decompression
+-rw-r--r-- 1 j22126 j22126     188341  7月 18 10:01 gakumonno_susume.txt
+drwxr-xr-x 2 j22126 j22126       4096  7月 18 09:12 shell_scripts
+-rw-r--r-- 1 j22126 j22126     292650  7月 18 10:00 ukigumo.txt
+j22126@raspberrypi:~/3J_jikken/IDE $ mkdir tmp
+j22126@raspberrypi:~/3J_jikken/IDE $ cp gakumonno_susume.txt tmp/
+j22126@raspberrypi:~/3J_jikken/IDE $ ls
+2023-02-21-raspios-bullseye-armhf-lite.img  compression_and_decompression  tmp
+aozorabunko_text_files.tar                  gakumonno_susume.txt           ukigumo.txt
+c_programming                               shell_scripts
+j22126@raspberrypi:~/3J_jikken/IDE $ ls -la
+合計 1273720
+drwxr-xr-x 6 j22126 j22126       4096  7月 18 10:28 .
+drwxr-xr-x 3 j22126 j22126       4096  7月 18 09:11 ..
+-rw-r--r-- 1 j22126 j22126 1962934272  7月 18 10:21 2023-02-21-raspios-bullseye-armhf-lite.img
+-rw-r--r-- 1 j22126 j22126      92117  7月 18 10:21 aozorabunko_text_files.tar
+drwxr-xr-x 2 j22126 j22126       4096  7月 18 09:12 c_programming
+drwxr-xr-x 2 j22126 j22126       4096  7月 18 09:12 compression_and_decompression
+-rw-r--r-- 1 j22126 j22126     188341  7月 18 10:01 gakumonno_susume.txt
+drwxr-xr-x 2 j22126 j22126       4096  7月 18 09:12 shell_scripts
+drwxr-xr-x 2 j22126 j22126       4096  7月 18 10:28 tmp
+-rw-r--r-- 1 j22126 j22126     292650  7月 18 10:00 ukigumo.txt
+j22126@raspberrypi:~/3J_jikken/IDE $ cd tmp
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ ls
+gakumonno_susume.txt
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ time xz gakumonno_susume.txt -k
+
+real	0m0.275s
+user	0m0.210s
+sys	0m0.061s
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ time gzip gakumonno_susume.txt -k
+
+real	0m0.042s
+user	0m0.037s
+sys	0m0.004s
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ time bzip2 gakumonno_susume.txt -k
+
+real	0m0.088s
+user	0m0.073s
+sys	0m0.013s
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ time zip gakumonno_susume.txt -k
+	zip warning: missing end signature--probably not a zip file (did you
+	zip warning: remember to use binary mode when you transferred it?)
+	zip warning: (if you are trying to read a damaged archive try -F)
+
+zip error: Zip file structure invalid (gakumonno_susume.txt)
+
+real	0m0.016s
+user	0m0.006s
+sys	0m0.008s
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ ls -la
+合計 400
+drwxr-xr-x 2 j22126 j22126   4096  7月 18 10:29 .
+drwxr-xr-x 6 j22126 j22126   4096  7月 18 10:28 ..
+-rw-r--r-- 1 j22126 j22126 188341  7月 18 10:28 gakumonno_susume.txt
+-rw-r--r-- 1 j22126 j22126  63522  7月 18 10:28 gakumonno_susume.txt.bz2
+-rw-r--r-- 1 j22126 j22126  80304  7月 18 10:28 gakumonno_susume.txt.gz
+-rw-r--r-- 1 j22126 j22126  65168  7月 18 10:28 gakumonno_susume.txt.xz
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ time zip gakumonno_susume.txt.zip gakumonno_susume.txt
+  adding: gakumonno_susume.txt (deflated 57%)
+
+real	0m0.091s
+user	0m0.085s
+sys	0m0.005s
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ ls
+gakumonno_susume.txt      gakumonno_susume.txt.gz  gakumonno_susume.txt.zip
+gakumonno_susume.txt.bz2  gakumonno_susume.txt.xz
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ ls -la
+合計 480
+drwxr-xr-x 2 j22126 j22126   4096  7月 18 10:30 .
+drwxr-xr-x 6 j22126 j22126   4096  7月 18 10:28 ..
+-rw-r--r-- 1 j22126 j22126 188341  7月 18 10:28 gakumonno_susume.txt
+-rw-r--r-- 1 j22126 j22126  63522  7月 18 10:28 gakumonno_susume.txt.bz2
+-rw-r--r-- 1 j22126 j22126  80304  7月 18 10:28 gakumonno_susume.txt.gz
+-rw-r--r-- 1 j22126 j22126  65168  7月 18 10:28 gakumonno_susume.txt.xz
+-rw-r--r-- 1 j22126 j22126  80455  7月 18 10:30 gakumonno_susume.txt.zip
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ rm .
+rm: '.' を削除できません: ディレクトリです
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ rm *
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ ls
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ cp ../gakumonno_susume.txt .
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ ls
+gakumonno_susume.txt
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ time xz gakumonno_susume.txt -k
+
+real	0m0.275s
+user	0m0.195s
+sys	0m0.080s
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ time gzip gakumonno_susume.txt -k
+
+real	0m0.075s
+user	0m0.062s
+sys	0m0.013s
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ time bzip2 gakumonno_susume.txt -k
+
+real	0m0.108s
+user	0m0.093s
+sys	0m0.015s
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ time zip gakumonno_susume.txt.zip gakumonno_susume.txt
+  adding: gakumonno_susume.txt (deflated 57%)
+
+real	0m0.092s
+user	0m0.085s
+sys	0m0.004s
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ ls -la
+合計 480
+drwxr-xr-x 2 j22126 j22126   4096  7月 18 10:31 .
+drwxr-xr-x 6 j22126 j22126   4096  7月 18 10:28 ..
+-rw-r--r-- 1 j22126 j22126 188341  7月 18 10:30 gakumonno_susume.txt
+-rw-r--r-- 1 j22126 j22126  63522  7月 18 10:30 gakumonno_susume.txt.bz2
+-rw-r--r-- 1 j22126 j22126  80304  7月 18 10:30 gakumonno_susume.txt.gz
+-rw-r--r-- 1 j22126 j22126  65168  7月 18 10:30 gakumonno_susume.txt.xz
+-rw-r--r-- 1 j22126 j22126  80455  7月 18 10:31 gakumonno_susume.txt.zip
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ ls -lh
+合計 472K
+-rw-r--r-- 1 j22126 j22126 184K  7月 18 10:30 gakumonno_susume.txt
+-rw-r--r-- 1 j22126 j22126  63K  7月 18 10:30 gakumonno_susume.txt.bz2
+-rw-r--r-- 1 j22126 j22126  79K  7月 18 10:30 gakumonno_susume.txt.gz
+-rw-r--r-- 1 j22126 j22126  64K  7月 18 10:30 gakumonno_susume.txt.xz
+-rw-r--r-- 1 j22126 j22126  79K  7月 18 10:31 gakumonno_susume.txt.zip
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ time xz -d gakumonno_susume.txt.xz 
+xz: gakumonno_susume.txt: ファイルが存在します
+
+real	0m0.010s
+user	0m0.001s
+sys	0m0.009s
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ rm gakumonno_susume.txt
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ time xz -d gakumonno_susume.txt.xz 
+
+real	0m0.044s
+user	0m0.025s
+sys	0m0.017s
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ time gzip -d gakumonno_susume.txt.xz 
+gzip: gakumonno_susume.txt.xz.gz: No such file or directory
+
+real	0m0.006s
+user	0m0.006s
+sys	0m0.001s
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ time gzip -d gakumonno_susume.txt.gz 
+
+real	0m0.017s
+user	0m0.012s
+sys	0m0.006s
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ time bzip2 -d gakumonno_susume.txt.bz2 
+
+real	0m0.064s
+user	0m0.055s
+sys	0m0.008s
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ time unzip gakumonno_susume.txt.zip 
+Archive:  gakumonno_susume.txt.zip
+  inflating: gakumonno_susume.txt    
+
+real	0m0.026s
+user	0m0.013s
+sys	0m0.009s
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ ls
+gakumonno_susume.txt  gakumonno_susume.txt.zip
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ ^C
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ rm *
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ cp ../aozorabunko_text_files.tar .
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ ls -lh
+合計 92K
+-rw-r--r-- 1 j22126 j22126 90K  7月 18 10:52 aozorabunko_text_files.tar
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ ls -la
+合計 100
+drwxr-xr-x 2 j22126 j22126  4096  7月 18 10:52 .
+drwxr-xr-x 7 j22126 j22126  4096  7月 18 10:55 ..
+-rw-r--r-- 1 j22126 j22126 92117  7月 18 10:52 aozorabunko_text_files.tar
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ ls
+aozorabunko_text_files.tar
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ rm aozorabunko_text_files.tar 
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ ls
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ mv ~/Downloads/aozorabunko_text_files.tar.gz ../
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ ls
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ ls ..
+aozorabunko_text_files.tar     compression_and_decompression  result.md      ukigumo.txt
+aozorabunko_text_files.tar.gz  gakumonno_susume.txt           shell_scripts
+c_programming                  imagetmp                       tmp
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ cp ../aozorabunko_text_files.tar.gz .
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ cd ../imagetmp/
+j22126@raspberrypi:~/3J_jikken/IDE/imagetmp $ ls
+2023-02-21-raspios-bullseye-armhf-lite.img  2023-02-21-raspios-bullseye-armhf-lite.img.xz
+j22126@raspberrypi:~/3J_jikken/IDE/imagetmp $ ls -lh
+合計 1.5G
+-rw-r--r-- 1 j22126 j22126 1.9G  7月 18 10:21 2023-02-21-raspios-bullseye-armhf-lite.img
+-rw------- 1 j22126 j22126 281M  7月 18 11:12 2023-02-21-raspios-bullseye-armhf-lite.img.xz
+j22126@raspberrypi:~/3J_jikken/IDE/imagetmp $ cd ../tmp/
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ ls
+aozorabunko_text_files.tar.gz
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ tar xv
+xvB  xvF  xvH  xvJ  xvL  xvN  xvP  xvS  xvU  xvW  xvZ  xvb  xvg  xvi  xvk  xvm  xvo  xvs  xvz
+xvC  xvG  xvI  xvK  xvM  xvO  xvR  xvT  xvV  xvX  xva  xvf  xvh  xvj  xvl  xvn  xvp  xvw  
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ tar xvz
+xvzB  xvzG  xvzJ  xvzM  xvzP  xvzT  xvzW  xvza  xvzg  xvzj  xvzm  xvzp  
+xvzC  xvzH  xvzK  xvzN  xvzR  xvzU  xvzX  xvzb  xvzh  xvzk  xvzn  xvzs  
+xvzF  xvzI  xvzL  xvzO  xvzS  xvzV  xvzZ  xvzf  xvzi  xvzl  xvzo  xvzw  
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ tar xvzf
+xvzfB  xvzfG  xvzfJ  xvzfM  xvzfP  xvzfT  xvzfW  xvzfa  xvzfh  xvzfk  xvzfn  xvzfs  
+xvzfC  xvzfH  xvzfK  xvzfN  xvzfR  xvzfU  xvzfX  xvzfb  xvzfi  xvzfl  xvzfo  xvzfw  
+xvzfF  xvzfI  xvzfL  xvzfO  xvzfS  xvzfV  xvzfZ  xvzfg  xvzfj  xvzfm  xvzfp  
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ tar xvzf aozorabunko_text_files.tar.gz 
+aozorabunko_text_files/
+aozorabunko_text_files/inka.txt
+aozorabunko_text_files/anitachi.txt
+aozorabunko_text_files/inakamono.txt
+aozorabunko_text_files/viyon.txt
+aozorabunko_text_files/i_can_speak.txt
+aozorabunko_text_files/asa.txt
+aozorabunko_text_files/itto.txt
+aozorabunko_text_files/a_aki.txt
+aozorabunko_text_files/ichinichino_roku.txt
+aozorabunko_text_files/atarashii_katachino.txt
+aozorabunko_text_files/asamasiki_mono.txt
+aozorabunko_text_files/ichimon_itto.txt
+aozorabunko_text_files/aito_bini_tsuite.txt
+aozorabunko_text_files/ippo_zenshin_niho_taikyaku.txt
+aozorabunko_text_files/aruto_haideruberuhi.txt
+aozorabunko_text_files/aomori.txt
+aozorabunko_text_files/aru_chukoku.txt
+aozorabunko_text_files/ibuse_masuji_koki.txt
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ ls
+aozorabunko_text_files  aozorabunko_text_files.tar.gz
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ ls -lh
+合計 96K
+drwxr-xr-x 2 j22126 j22126 4.0K  4月 18  2023 aozorabunko_text_files
+-rw-r--r-- 1 j22126 j22126  90K  7月 18 11:05 aozorabunko_text_files.tar.gz
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ cd aozorabunko_text_files/
+j22126@raspberrypi:~/3J_jikken/IDE/tmp/aozorabunko_text_files $ ls
+a_aki.txt                asa.txt                  ichinichino_roku.txt
+aito_bini_tsuite.txt     asamasiki_mono.txt       inakamono.txt
+anitachi.txt             atarashii_katachino.txt  inka.txt
+aomori.txt               i_can_speak.txt          ippo_zenshin_niho_taikyaku.txt
+aru_chukoku.txt          ibuse_masuji_koki.txt    itto.txt
+aruto_haideruberuhi.txt  ichimon_itto.txt         viyon.txt
+j22126@raspberrypi:~/3J_jikken/IDE/tmp/aozorabunko_text_files $ ls -lh
+合計 236K
+-rw-r--r-- 1 j22126 j22126 3.8K 10月 22  2005 a_aki.txt
+-rw-r--r-- 1 j22126 j22126  27K  2月  1  2016 aito_bini_tsuite.txt
+-rw-r--r-- 1 j22126 j22126  17K 10月 23  2005 anitachi.txt
+-rw-r--r-- 1 j22126 j22126 1.9K 11月 15  2006 aomori.txt
+-rw-r--r-- 1 j22126 j22126 2.3K  6月 16  2004 aru_chukoku.txt
+-rw-r--r-- 1 j22126 j22126  19K 10月 23  2005 aruto_haideruberuhi.txt
+-rw-r--r-- 1 j22126 j22126 7.1K  2月 19  2004 asa.txt
+-rw-r--r-- 1 j22126 j22126 4.7K  3月  4  2004 asamasiki_mono.txt
+-rw-r--r-- 1 j22126 j22126  885  4月  7  2009 atarashii_katachino.txt
+-rw-r--r-- 1 j22126 j22126 4.6K  2月  1  2016 i_can_speak.txt
+-rw-r--r-- 1 j22126 j22126  22K  6月  8  2004 ibuse_masuji_koki.txt
+-rw-r--r-- 1 j22126 j22126 3.1K  7月 12  2016 ichimon_itto.txt
+-rw-r--r-- 1 j22126 j22126 5.8K  7月 12  2016 ichinichino_roku.txt
+-rw-r--r-- 1 j22126 j22126  579  4月  7  2009 inakamono.txt
+-rw-r--r-- 1 j22126 j22126  29K  2月 23  2016 inka.txt
+-rw-r--r-- 1 j22126 j22126 2.7K  7月 12  2016 ippo_zenshin_niho_taikyaku.txt
+-rw-r--r-- 1 j22126 j22126 7.0K 10月 24  2005 itto.txt
+-rw-r--r-- 1 j22126 j22126  42K  5月 22  2011 viyon.txt
+j22126@raspberrypi:~/3J_jikken/IDE/tmp/aozorabunko_text_files $ ls
+a_aki.txt                asa.txt                  ichinichino_roku.txt
+aito_bini_tsuite.txt     asamasiki_mono.txt       inakamono.txt
+anitachi.txt             atarashii_katachino.txt  inka.txt
+aomori.txt               i_can_speak.txt          ippo_zenshin_niho_taikyaku.txt
+aru_chukoku.txt          ibuse_masuji_koki.txt    itto.txt
+aruto_haideruberuhi.txt  ichimon_itto.txt         viyon.txt
+j22126@raspberrypi:~/3J_jikken/IDE/tmp/aozorabunko_text_files $ cd ..
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ ls
+aozorabunko_text_files  aozorabunko_text_files.tar.gz
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ tar cvf aozorabunko_text_files.tar aozorabunko_text_files
+aozorabunko_text_files/
+aozorabunko_text_files/ichimon_itto.txt
+aozorabunko_text_files/inakamono.txt
+aozorabunko_text_files/asamasiki_mono.txt
+aozorabunko_text_files/atarashii_katachino.txt
+aozorabunko_text_files/a_aki.txt
+aozorabunko_text_files/itto.txt
+aozorabunko_text_files/ippo_zenshin_niho_taikyaku.txt
+aozorabunko_text_files/inka.txt
+aozorabunko_text_files/asa.txt
+aozorabunko_text_files/aomori.txt
+aozorabunko_text_files/ibuse_masuji_koki.txt
+aozorabunko_text_files/aru_chukoku.txt
+aozorabunko_text_files/ichinichino_roku.txt
+aozorabunko_text_files/aito_bini_tsuite.txt
+aozorabunko_text_files/i_can_speak.txt
+aozorabunko_text_files/viyon.txt
+aozorabunko_text_files/anitachi.txt
+aozorabunko_text_files/aruto_haideruberuhi.txt
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ ls
+aozorabunko_text_files  aozorabunko_text_files.tar  aozorabunko_text_files.tar.gz
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ time xz aozorabunko_text_files.tar -k
+
+real	0m0.290s
+user	0m0.221s
+sys	0m0.068s
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ time gzip aozorabunko_text_files.tar -k
+gzip: aozorabunko_text_files.tar.gz already exists; do you wish to overwrite (y or n)? ^C
+real	0m2.366s
+user	0m0.005s
+sys	0m0.001s
+
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ time gzip aozorabunko_text_files.tar -k^C
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ time gzip aozorabunko_text_files.tar -k
+gzip: aozorabunko_text_files.tar.gz already exists; do you wish to overwrite (y or n)? y
+
+real	0m1.150s
+user	0m0.048s
+sys	0m0.000s
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ ls
+aozorabunko_text_files      aozorabunko_text_files.tar.gz
+aozorabunko_text_files.tar  aozorabunko_text_files.tar.xz
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ ls
+aozorabunko_text_files      aozorabunko_text_files.tar.gz
+aozorabunko_text_files.tar  aozorabunko_text_files.tar.xz
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ rm aozorabunko_text_files.tar.gz 
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ time gzip aozorabunko_text_files.tar -k
+
+real	0m0.110s
+user	0m0.103s
+sys	0m0.006s
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ time bzip2 aozorabunko_text_files.tar -k
+
+real	0m0.100s
+user	0m0.087s
+sys	0m0.010s
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ time zip aozorabunko_text_files.tar.zip aozorabunko_text_files.tar
+aozorabunko_text_files.tar      aozorabunko_text_files.tar.gz   
+aozorabunko_text_files.tar.bz2  aozorabunko_text_files.tar.xz   
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ time zip aozorabunko_text_files.tar.zip aozorabunko_text_files.tar
+  adding: aozorabunko_text_files.tar (deflated 59%)
+
+real	0m0.089s
+user	0m0.083s
+sys	0m0.004s
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ ls -lh
+合計 560K
+drwxr-xr-x 2 j22126 j22126 4.0K  4月 18  2023 aozorabunko_text_files
+-rw-r--r-- 1 j22126 j22126 220K  7月 18 11:21 aozorabunko_text_files.tar
+-rw-r--r-- 1 j22126 j22126  73K  7月 18 11:21 aozorabunko_text_files.tar.bz2
+-rw-r--r-- 1 j22126 j22126  90K  7月 18 11:21 aozorabunko_text_files.tar.gz
+-rw-r--r-- 1 j22126 j22126  75K  7月 18 11:21 aozorabunko_text_files.tar.xz
+-rw-r--r-- 1 j22126 j22126  90K  7月 18 11:23 aozorabunko_text_files.tar.zip
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ 
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ tar xvzf aozorabunko_text_files.xz
+tar (child): aozorabunko_text_files.xz: open 不能: そのようなファイルやディレクトリはありません
+tar (child): Error is not recoverable: exiting now
+tar: Child returned status 2
+tar: Error is not recoverable: exiting now
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ tar xvzf aozorabunko_text_files.tar.xz
+
+gzip: stdin: not in gzip format
+tar: Child returned status 1
+tar: Error is not recoverable: exiting now
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ ls
+aozorabunko_text_files      aozorabunko_text_files.tar.bz2  aozorabunko_text_files.tar.xz
+aozorabunko_text_files.tar  aozorabunko_text_files.tar.gz   aozorabunko_text_files.tar.zip
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ tar xvzf aozora^Cnko_text_files.tar.xz
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ rm aozorabunko_text_files.tar
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ ls
+aozorabunko_text_files          aozorabunko_text_files.tar.gz  aozorabunko_text_files.tar.zip
+aozorabunko_text_files.tar.bz2  aozorabunko_text_files.tar.xz
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ tar xvzf aozorabunko_text_files.tar.xz
+
+gzip: stdin: not in gzip format
+tar: Child returned status 1
+tar: Error is not recoverable: exiting now
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ ls -lh
+合計 340K
+drwxr-xr-x 2 j22126 j22126 4.0K  4月 18  2023 aozorabunko_text_files
+-rw-r--r-- 1 j22126 j22126  73K  7月 18 11:21 aozorabunko_text_files.tar.bz2
+-rw-r--r-- 1 j22126 j22126  90K  7月 18 11:21 aozorabunko_text_files.tar.gz
+-rw-r--r-- 1 j22126 j22126  75K  7月 18 11:21 aozorabunko_text_files.tar.xz
+-rw-r--r-- 1 j22126 j22126  90K  7月 18 11:23 aozorabunko_text_files.tar.zip
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ tar xvzf aozorabunko_text_files.tar.xz
+
+gzip: stdin: not in gzip format
+tar: Child returned status 1
+tar: Error is not recoverable: exiting now
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ time tar xvzf aozorabunko_text_files.tar.xz
+
+gzip: stdin: not in gzip format
+tar: Child returned status 1
+tar: Error is not recoverable: exiting now
+
+real	0m0.020s
+user	0m0.006s
+sys	0m0.014s
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ time xz -dk aozorabunko_text_files.tar.xz 
+
+real	0m0.052s
+user	0m0.031s
+sys	0m0.018s
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ ls
+aozorabunko_text_files      aozorabunko_text_files.tar.bz2  aozorabunko_text_files.tar.xz
+aozorabunko_text_files.tar  aozorabunko_text_files.tar.gz   aozorabunko_text_files.tar.zip
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ ls -lh
+合計 560K
+drwxr-xr-x 2 j22126 j22126 4.0K  4月 18  2023 aozorabunko_text_files
+-rw-r--r-- 1 j22126 j22126 220K  7月 18 11:21 aozorabunko_text_files.tar
+-rw-r--r-- 1 j22126 j22126  73K  7月 18 11:21 aozorabunko_text_files.tar.bz2
+-rw-r--r-- 1 j22126 j22126  90K  7月 18 11:21 aozorabunko_text_files.tar.gz
+-rw-r--r-- 1 j22126 j22126  75K  7月 18 11:21 aozorabunko_text_files.tar.xz
+-rw-r--r-- 1 j22126 j22126  90K  7月 18 11:23 aozorabunko_text_files.tar.zip
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ ls -la
+合計 568
+drwxr-xr-x 3 j22126 j22126   4096  7月 18 11:43 .
+drwxr-xr-x 7 j22126 j22126   4096  7月 18 11:37 ..
+drwxr-xr-x 2 j22126 j22126   4096  4月 18  2023 aozorabunko_text_files
+-rw-r--r-- 1 j22126 j22126 225280  7月 18 11:21 aozorabunko_text_files.tar
+-rw-r--r-- 1 j22126 j22126  74229  7月 18 11:21 aozorabunko_text_files.tar.bz2
+-rw-r--r-- 1 j22126 j22126  91651  7月 18 11:21 aozorabunko_text_files.tar.gz
+-rw-r--r-- 1 j22126 j22126  76596  7月 18 11:21 aozorabunko_text_files.tar.xz
+-rw-r--r-- 1 j22126 j22126  91808  7月 18 11:23 aozorabunko_text_files.tar.zip
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ vim .bashrc
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ vim ~/.bashrc
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ source ~/.bashrc 
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ vim ~/.bashrc
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ source ~/.bashrc 
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ time gzip -dk aozorabunko_text_files.tar.gz
+gzip: aozorabunko_text_files.tar already exists; do you wish to overwrite (y or n)? ^[^C
+real	0m8.114s
+user	0m0.000s
+sys	0m0.010s
+
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ time gzip -dk aozorabunko_text_files.tar.gz
+
+real	0m0.024s
+user	0m0.016s
+sys	0m0.006s
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ time bzip2 -dk aozorabunko_text_files.tar.bz2
+
+real	0m0.030s
+user	0m0.029s
+sys	0m0.000s
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ time zip aozorabunko_text_files.tar aozorabunko_text_files.tar.zip 
+  adding: aozorabunko_text_files.tar.zip (stored 0%)
+
+real	0m0.005s
+user	0m0.001s
+sys	0m0.005s
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ ls
+合計 440
+drwxr-xr-x 3 j22126 j22126  4096  7月 18 11:56 .
+drwxr-xr-x 7 j22126 j22126  4096  7月 18 11:37 ..
+drwxr-xr-x 2 j22126 j22126  4096  4月 18  2023 aozorabunko_text_files
+-rw-r--r-- 1 j22126 j22126 92018  7月 18 11:56 aozorabunko_text_files.tar
+-rw-r--r-- 1 j22126 j22126 74229  7月 18 11:21 aozorabunko_text_files.tar.bz2
+-rw-r--r-- 1 j22126 j22126 91651  7月 18 11:21 aozorabunko_text_files.tar.gz
+-rw-r--r-- 1 j22126 j22126 76596  7月 18 11:21 aozorabunko_text_files.tar.xz
+-rw-r--r-- 1 j22126 j22126 91808  7月 18 11:23 aozorabunko_text_files.tar.zip
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ ls -lh
+合計 440K
+drwxr-xr-x 3 j22126 j22126 4.0K  7月 18 11:56 .
+drwxr-xr-x 7 j22126 j22126 4.0K  7月 18 11:37 ..
+drwxr-xr-x 2 j22126 j22126 4.0K  4月 18  2023 aozorabunko_text_files
+-rw-r--r-- 1 j22126 j22126  90K  7月 18 11:56 aozorabunko_text_files.tar
+-rw-r--r-- 1 j22126 j22126  73K  7月 18 11:21 aozorabunko_text_files.tar.bz2
+-rw-r--r-- 1 j22126 j22126  90K  7月 18 11:21 aozorabunko_text_files.tar.gz
+-rw-r--r-- 1 j22126 j22126  75K  7月 18 11:21 aozorabunko_text_files.tar.xz
+-rw-r--r-- 1 j22126 j22126  90K  7月 18 11:23 aozorabunko_text_files.tar.zip
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ unzip aozorabunko_text_files.tar.zip
+Archive:  aozorabunko_text_files.tar.zip
+  inflating: aozorabunko_text_files.tar  
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ ls -lh
+合計 348K
+drwxr-xr-x 3 j22126 j22126 4.0K  7月 18 11:57 .
+drwxr-xr-x 7 j22126 j22126 4.0K  7月 18 11:37 ..
+drwxr-xr-x 2 j22126 j22126 4.0K  4月 18  2023 aozorabunko_text_files
+-rw-r--r-- 1 j22126 j22126  73K  7月 18 11:21 aozorabunko_text_files.tar.bz2
+-rw-r--r-- 1 j22126 j22126  90K  7月 18 11:21 aozorabunko_text_files.tar.gz
+-rw-r--r-- 1 j22126 j22126  75K  7月 18 11:21 aozorabunko_text_files.tar.xz
+-rw-r--r-- 1 j22126 j22126  90K  7月 18 11:23 aozorabunko_text_files.tar.zip
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ unzip aozorabunko_text_files.tar.zip 
+Archive:  aozorabunko_text_files.tar.zip
+  inflating: aozorabunko_text_files.tar  
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ time unzip aozorabunko_text_files.tar.zip 
+Archive:  aozorabunko_text_files.tar.zip
+  inflating: aozorabunko_text_files.tar  
+
+real	0m0.010s
+user	0m0.007s
+sys	0m0.003s
+j22126@raspberrypi:~/3J_jikken/IDE/tmp $ ls -lh
+合計 568K
+drwxr-xr-x 3 j22126 j22126 4.0K  7月 18 11:58 .
+drwxr-xr-x 7 j22126 j22126 4.0K  7月 18 11:37 ..
+drwxr-xr-x 2 j22126 j22126 4.0K  4月 18  2023 aozorabunko_text_files
+-rw-r--r-- 1 j22126 j22126 220K  7月 18 11:21 aozorabunko_text_files.tar
+-rw-r--r-- 1 j22126 j22126  73K  7月 18 11:21 aozorabunko_text_files.tar.bz2
+-rw-r--r-- 1 j22126 j22126  90K  7月 18 11:21 aozorabunko_text_files.tar.gz
+-rw-r--r-- 1 j22126 j22126  75K  7月 18 11:21 aozorabunko_text_files.tar.xz
+-rw-r--r-- 1 j22126 j22126  90K  7月 18 11:23 aozorabunko_text_files.tar.zip
+

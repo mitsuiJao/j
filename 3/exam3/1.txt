@@ -1,0 +1,5 @@
+rollDice: サイコロを振り、DiceState構造体のdice変数に格納する。サイコロは1ターンで3回振り、12ターンあるので1人あたり36回この関数が呼ばれる
+printDice: DiceStateのdice変数にあるサイコロの状態を表示する。rollDiceが呼ばれると一緒に呼ばれる。
+getHoldInput: ユーザが保持するサイコロを入力させる。DiceStateのhold変数に格納する。1ターンで2回呼ばれる。
+calculateScore: DiceStateのdiceとhold、ユーザが選択するカテゴリーを元に計算される。1ターンで1回スコアが計上される。
+printCategories: 
