@@ -1,0 +1,11 @@
+{
+  "name": "launch program that reads a file from stdin",
+  "type": "node",
+  "request": "launch",
+  "program": "program.js",
+  "console": "integratedTerminal",
+  "args": [
+    "<",
+    "3/risan/Q9redirect"
+  ]
+}
