@@ -39,8 +39,8 @@ void insertRear(List *l, const int x){
         }
         ptr->next = l->crnt = allocNode();
         setNode(ptr->next, x, NULL);
+        l->n++;
     }
-    l->n++;
 }
 
 void removeFront(List *l){
@@ -95,7 +95,11 @@ int removeSearch(List *l, const int x){
     if (ptr == NULL){
         return -1;
     }
-    pre->next = ptr->next;
+    if (pre == NULL) {
+        l->head = ptr->next;
+    } else {
+        pre->next = ptr->next;
+    }
     free(ptr);
     l->crnt = pre;
     return 1;

@@ -6,10 +6,10 @@
             "type": "cppdbg", // C/C++ デバッガ (Microsoft C++ 拡張)
             "request": "launch", // 「起動型」のデバッグ
             "program": "${workspaceFolder}/algo-data-3-3", // 実行ファイルのパス（ビルドで作られるやつ）
-            // "args": [
-                // "<",
-                // "redirect"
-            // ], // コマンドライン引数（必要ならここに指定）
+            "args": [
+                "<",
+                "redirect"
+            ], // コマンドライン引数（必要ならここに指定）
             "stopAtEntry": false, // :エントリポイントで停止するか
             "cwd": "${workspaceFolder}", // カレントディレクトリ
             "environment": [], // 環境変数を渡す（必要なら）
