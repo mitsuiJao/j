@@ -44,10 +44,10 @@ int removeNode(BinNode **root, const int x){
     BinNode **left;
     BinNode **p = root;
 
-    while (&(*p)->data != x){
+    while ((*p)->data != x){
         if (*p == NULL){
             return -1;
-        } else if (&(*p)->data > x){
+        } else if ((*p)->data > x){
             p = &((*p)->left);
         } else {
             p = &((*p)->right);
@@ -77,7 +77,7 @@ int removeNode(BinNode **root, const int x){
 void printNode(const BinNode *p){
     if (p != NULL){
         printNode(p->left);
-        printf("%d ", p->data);
+        printf("%d \n", p->data);
         printNode(p->right);
     }
 }
