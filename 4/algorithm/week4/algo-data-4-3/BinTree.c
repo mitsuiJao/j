@@ -6,7 +6,7 @@ static BinNode *allocBinNode(void){
     return calloc(1, sizeof(BinNode));
 }
 
-static void setBinNode(BinNode *n, const int x, const BinNode *left, const BinNode *right){
+static void setBinNode(BinNode *n, const int x, BinNode *left, BinNode *right){
     n->data = x;
     n->left = left;
     n->right = right;
@@ -39,11 +39,20 @@ BinNode *add(BinNode *p, const int x){
     return p;
 }
 
-int remove(BinNode **root, const int x){
+int removeNode(BinNode **root, const int x){
     BinNode *next, *temp;
     BinNode **left;
+    BinNode **p = root;
 
-    BinNode **p = search(root, x);
+    while (&(*p)->data != x){
+        if (*p == NULL){
+            return -1;
+        } else if (&(*p)->data > x){
+            p = &((*p)->left);
+        } else {
+            p = &((*p)->right);
+        }
+    }
     
     if ((*p)->left == NULL){
         next = (*p)->right;
@@ -65,11 +74,11 @@ int remove(BinNode **root, const int x){
     return 0;
 }
 
-void print(const BinNode *p){
+void printNode(const BinNode *p){
     if (p != NULL){
-        print(p->left);
+        printNode(p->left);
         printf("%d ", p->data);
-        print(p->right);
+        printNode(p->right);
     }
 }
 

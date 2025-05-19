@@ -13,12 +13,12 @@ int main(void) {
             search(t, v);
         } else if (op == 2) {
             scanf("%d", &v);
-            add(t, v);
+            t = add(t, v);
         } else if (op == 3) {
             scanf("%d", &v);
-            remove(t, v);
+            removeNode(&t, v);
         } else if (op == 4) {
-            print(t);
+            printNode(t);
         } else if (op == 5) {
             freeTree(t);
         } 

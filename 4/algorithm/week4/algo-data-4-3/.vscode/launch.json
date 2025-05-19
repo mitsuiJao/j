@@ -5,7 +5,7 @@
       "name": "Debug algo", // デバッグ構成の名前（UIに表示される）
       "type": "cppdbg", // C/C++ デバッガ (Microsoft C++ 拡張)
       "request": "launch", // 「起動型」のデバッグ
-      "program": "${fileDirname}/${fileBasenameNoExtension}", // 実行ファイルのパス（ビルドで作られるやつ）
+      "program": "${fileDirname}/algo-data-4-3", // 実行ファイルのパス（ビルドで作られるやつ）
       "args": [
         "<",
         "redirect"
