@@ -76,8 +76,8 @@ int removeNode(BinNode **root, const int x){
 
 void printNode(const BinNode *p){
     if (p != NULL){
+        printf("%d ", p->data);
         printNode(p->left);
-        printf("%d \n", p->data);
         printNode(p->right);
     }
 }
