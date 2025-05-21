@@ -1,0 +1,28 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug algo", // デバッグ構成の名前（UIに表示される）
+      "type": "cppdbg", // C/C++ デバッガ (Microsoft C++ 拡張)
+      "request": "launch", // 「起動型」のデバッグ
+      "program": "${fileDirname}/algo-data-5", // 実行ファイルのパス（ビルドで作られるやつ）
+      "args": [
+        
+      ], // コマンドライン引数（必要ならここに指定）
+      "stopAtEntry": false, // :エントリポイントで停止するか
+      "cwd": "${workspaceFolder}", // カレントディレクトリ
+      "environment": [], // 環境変数を渡す（必要なら）
+      "externalConsole": false, // 外部端末で実行するか（falseでVSCode内ターミナル）
+      "MIMode": "gdb", // GDB を使う（Linuxなら基本これ）
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "build algo", // 実行前に "build algo" タスクを実行（tasks.jsonのlabel）
+      "miDebuggerPath": "/usr/bin/gdb" // GDB のパス（通常このままでOK）
+    }
+  ]
+}
