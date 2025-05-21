@@ -71,3 +71,13 @@ Node init(Node *n){
 	n->child = malloc(sizeof(Node));
 	setinit(n);
 }
+
+void terminateTree(Node *n){
+	if (n->count != 0){
+		for (int i=0; i<n->count; i++){
+			terminateTree(&n->child[i]);
+		}
+	} else {
+		free(n);
+	}
+}

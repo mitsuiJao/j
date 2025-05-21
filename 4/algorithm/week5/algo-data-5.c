@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "Tree.h"
 #include "Queue.h"
-#define CAPACITY 10092
+#define CAPACITY 16384
 
 void discover(Node *n, Queue *q){
     if (q->num == 0){
@@ -25,5 +25,7 @@ int main(void){
     Enque(&q, &n);
     discover(&n, &q);
 
+    terminateQueue(&q);
+    terminateTree(&n);
     return 0;
 }

@@ -6,7 +6,7 @@ typedef struct {
     int num;
     int front;
     int rear;
-    Node **que;
+    Node *que;
 } Queue;
 
 int Initialize(Queue *q, int max);
@@ -20,4 +20,4 @@ int IsEmpty(const Queue *q);
 int IsFull(const Queue *q);
 int Search(const Queue *q, int x);
 void Print(const Queue *q);
-void Terminate(Queue *q);
+void terminateQueue(Queue *q);
