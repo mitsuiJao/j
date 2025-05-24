@@ -16,15 +16,15 @@ void discover(Node *n, Queue *q){
 int main(void){
     Queue q; 
     Node n;
-    initQueue(&q, CAPACITY);
     printf("init queue\n");
-    initTree(&n);
+    initQueue(&q, CAPACITY);
     printf("init tree\n");
+    initTree(&n);
 
-    Enque(&q, &n);
     printf("enque\n");
+    Enque(&q, &n);
+    printf("discover\n");
     discover(&n, &q);
-    printf("\ndiscover\n");
 
     terminateQueue(&q);
     terminateTree(&n);

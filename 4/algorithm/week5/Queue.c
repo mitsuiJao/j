@@ -39,35 +39,8 @@ Node *Deque(Queue *q){
     }
 }
 
-int Peek(const Queue *q, int *x) {
-    return 0;
-}
-
 void Clear(Queue *q) { 
     q->num = q->front = q->rear = 0; 
-}
-
-int Capacity(const Queue *q) { 
-    return q->max; 
-}
-
-int Size(const Queue *q) { 
-    return q->num; 
-}
-
-int IsEmpty(const Queue *q) { 
-    return q->num <= 0; 
-}
-
-int IsFull(const Queue *q) { 
-    return q->num >= q->max; 
-}
-
-int Search(const Queue *q, int x) {
-    return -1;
-}
-
-void Print(const Queue *q) {
 }
 
 void terminateQueue(Queue *q) {
