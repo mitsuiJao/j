@@ -3,7 +3,7 @@
 #include "Queue.h"
 #include "Node.h"
 
-int Initialize(Queue *q, int max) {
+int initQueue(Queue *q, int max) {
     q->num = q->front = q->rear = 0;
     if ((q->que = calloc(max, sizeof(Node))) == NULL) {
         q->max = 0;
@@ -14,18 +14,15 @@ int Initialize(Queue *q, int max) {
 }
 
 int Enque(Queue *q, Node *n){
-    if (q == NULL || q->que == NULL) { // 追加: NULLチェック
-        return -1;
-    }
     if (q->num >= q->max){
         return -1;
     } else {
         q->que[q->rear] = *n;
-        q->rear++;
-        if (q->rear == q->max){ //一周回った状態
-            q->rear = 0;
-        }
         q->num++;
+        q->rear++;
+    }
+    if (q->rear == q->max){ //一周回った状態
+        q->rear = 0;
     }
     return 0;
 }

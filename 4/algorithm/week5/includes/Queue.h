@@ -9,7 +9,7 @@ typedef struct {
     Node *que;
 } Queue;
 
-int Initialize(Queue *q, int max);
+int initQueue(Queue *q, int max);
 int Enque(Queue *q, Node *n);
 Node *Deque(Queue *q);
 int Peek(const Queue *q, int *x);

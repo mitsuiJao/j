@@ -66,7 +66,7 @@ void add(Node *n, int x){
 	n->count++;
 }
 
-Node init(Node *n){
+Node initTree(Node *n){
 	n->count = 0;
 	n->child = malloc(sizeof(Node));
 	setinit(n);
@@ -78,6 +78,6 @@ void terminateTree(Node *n){
 			terminateTree(&n->child[i]);
 		}
 	} else {
-		free(n);
+		free(n->child);
 	}
 }
