@@ -1,4 +1,4 @@
-HashLish#pragma once
+#pragma once
 
 typedef enum {
 	Occupied,
@@ -17,9 +17,9 @@ typedef struct {
 } HashList;
 
 int Initialize(HashList *h, int size);
-Bucket *Search(const HashList :H, const int x);
+Bucket *Search(const HashList *h, const int x);
 int Add(HashList *h, const int x);
 int Remove(HashList *h, const int x);
-void Dump(const int x);
+void Dump(const HashList *h);
 void Clear(HashList *h);
 void Terminate(HashList *h);

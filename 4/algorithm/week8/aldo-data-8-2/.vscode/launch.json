@@ -2,11 +2,11 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Debug algo",
+            "name": "algo debug",
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}/algo-data-8-2",
-            "args": [],
+            "args": ["<", "redirect"],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
