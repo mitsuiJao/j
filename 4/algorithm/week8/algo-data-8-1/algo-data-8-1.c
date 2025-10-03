@@ -14,7 +14,7 @@ int main(void){
     left = 0; right = n-1; mid = (left+right)/2;
     while (left < right) {
         if (v[mid] == k){
-            printf("found %d %d\n", mid, v[mid]);
+            printf("found: %d %d\n", mid, v[mid]);
             free(v);
             return 0;
         }
@@ -26,9 +26,9 @@ int main(void){
         mid = (left+right) / 2;
     }
     if (v[mid] == k){
-        printf("found %d %d\n", mid, v[mid]);
+        printf("found: %d %d\n", mid, v[mid]);
     } else {
-        printf("not found %d\n", k);
+        printf("not found: %d\n", k);
     }
     free(v);
     return 0;

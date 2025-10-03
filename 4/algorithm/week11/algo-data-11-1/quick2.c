@@ -1,9 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define swap(type, x, y) do { type t = x; x = y; y = t; } while (0)
+#define swap(type, x, y) do { type t = x; x = y; y = t; swap_count++; } while (0)
+
+int sort3elem_count = 0;
+int quick_count = 0;
+int swap_count = 0;
+
 
 int sort3elem(int x[], int a, int b, int c){
+    sort3elem_count++;
     if (x[b] < x[a]) swap(int, x[b], x[a]);
     if (x[c] < x[b]) swap(int, x[c], x[b]);
     if (x[b] < x[a]) swap(int, x[b], x[a]);
@@ -11,6 +17,7 @@ int sort3elem(int x[], int a, int b, int c){
 }
 
 void quick(int a[], int left, int right){
+    quick_count++;
     int pl = left;
     int pr = right;
     int m = sort3elem(a, pl, (pl+pr) / 2, pr);
@@ -47,6 +54,7 @@ int main(void){
 
     for (int i = 0; i < nx; i++){
         printf("x[%d] : ", i);
+        printf("\n");
         scanf("%d", &x[i]);
     }
 
@@ -54,8 +62,9 @@ int main(void){
 
     printf("sorted!\n");
     for (int i = 0; i < nx; i++){
-        printf("x[%d] = %d\n", i, x[i]);
+        printf("%d ", x[i]);
     }
+    printf("\n%d\n%d\n%d\n", quick_count, sort3elem_count, swap_count);
 
     free(x);
     return 0;
