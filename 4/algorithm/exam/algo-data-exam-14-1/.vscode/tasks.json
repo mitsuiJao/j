@@ -1,0 +1,24 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build algo", // このタスクの名前。launch.json からも参照される
+            "type": "shell", // ターミナルで実行される通常のコマンド
+            "command": "gcc", // 実行するコンパイラ（ここでは gcc）
+            "args": [ // gcc に渡す引数たち
+                "-g", // デバッグ情報を含める（gdb用）
+                "algo-data-3-3.c", // メインファイル
+                "linkedList.c", // 関数定義があるファイル
+                "-o",
+                "algo-data-3-3" // 出力ファイル名：algo
+            ],
+            "group": {
+                "kind": "build", // "ビルド" グループに属する（Ctrl+Shift+B で呼び出せる）
+                "isDefault": true // 既定のビルドタスクに設定
+            },
+            "problemMatcher": [
+                "$gcc"
+            ] // コンパイルエラー表示形式を VSCode に教える
+        }
+    ]
+}
