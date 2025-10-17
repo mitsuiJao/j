@@ -12,21 +12,30 @@
     <button id="start_stop">START</button>
 
     <script>
+        // initialize
+        // エレメント取得
         dateElem = document.getElementById("date");
         timeElem = document.getElementById("time");
 
         var now;
         var start;
         var stop_;
+        
+        // 10ミリ秒ごとに実行する
         setInterval(() => {
+            // dateインスタンス作成
             now = new Date();
+            // エレメント書き換え、dateインスタンスのメソッド
             dateElem.innerHTML = `今日は${now.getFullYear()}年${now.getMonth()+1}月${now.getDate()}日`
             timeElem.innerHTML = `現在の時刻は${now.getHours()}時${now.getMinutes()}分${now.getSeconds()}秒`            
         }, 10);
 
+        // #start_stopにクリックイベントリスナー追加
         document.getElementById("start_stop").addEventListener("click", function(){
+            // thisは自分自身、#start_stopを表す
             if(this.innerHTML == "START"){
                 start = new Date;
+                // UNIX時間
                 start = start.getTime();
                 this.innerHTML = "STOP";
                 document.getElementById("stopwatch").innerHTML = "STARTボタンを押してからのミリ秒数を計測中";
@@ -34,7 +43,9 @@
                 stop_ = new Date;
                 stop_ = stop_.getTime()
                 this.innerHTML = "START";
-                let diff = stop_-start;
+                // 経過時間, ミリ秒
+                let diff = stop_ - start;
+                // 4900以上かつ5100以下
                 if (4900 <= diff && diff <= 5100){
                     document.getElementById("stopwatch").innerHTML = `STARTボタンを押してから${diff}ミリ秒！ほぼ5秒！すごい！`;
                 } else {
@@ -43,11 +54,13 @@
             }
         });
 
+        // DOMにキーダウンイベントリスナー追加
         document.addEventListener("keydown", function(){
             start = new Date;
             document.getElementById("stopwatch").innerHTML = start.getHours() + ":" + start.getMinutes() + ":" + start.getSeconds();
         });
 
+        // キーアップ
         document.addEventListener("keyup", function(){
             document.getElementById("stopwatch").innerHTML = "00:00:00";
         });
