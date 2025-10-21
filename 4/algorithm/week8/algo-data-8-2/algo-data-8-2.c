@@ -3,7 +3,7 @@
 
 int main(void){
 	HashList hash;
-	Initialize(&hash, 20);
+	Initialize(&hash, 1000000);
 	Bucket *temp;
 	int op = 1;
 	int v, result, opCounter;
@@ -15,7 +15,7 @@ int main(void){
 			scanf("%d", &v);
 			result = Add(&hash, v);
 			if (result) {
-				printf("error Add func\n");
+				printf("error Add func %d\n", result);
 			}
 		}
 		else if (op == 2){
