@@ -8,9 +8,9 @@
 #define SIZE 500  // 行列のサイズ
 
 typedef struct {
-    int (*A)[SIZE][SIZE];
-    int (*B)[SIZE][SIZE];
-    int (*C)[SIZE][SIZE];
+    int (*A)[SIZE];
+    int (*B)[SIZE];
+    int (*C)[SIZE];
     int start;
     int end;
 } ThreadArgs;
@@ -36,8 +36,7 @@ void multiply_partial(int A[SIZE][SIZE], int B[SIZE][SIZE], int C[SIZE][SIZE],
     }
 }
 
-void multiply_matrices_multi(int A[SIZE][SIZE], int B[SIZE][SIZE],
-                             int C[SIZE][SIZE]) {
+void multiply_matrices_multi(int A[SIZE][SIZE], int B[SIZE][SIZE], int C[SIZE][SIZE]) {
     pid_t pid1, pid2;  // プロセスIDを格納する変数
 
     // 行列計算を3分割するための値の生成
@@ -78,8 +77,7 @@ void multiply_matrices_multi(int A[SIZE][SIZE], int B[SIZE][SIZE],
 void* thread_wrapper(void* arg) {
     ThreadArgs* args = (ThreadArgs*)arg;
 
-    multiply_partial(*(args->A), *(args->B), *(args->C), args->start,
-                     args->end);
+    multiply_partial(args->A, args->B, args->C, args->start, args->end);
 
     pthread_exit(NULL);
 }
