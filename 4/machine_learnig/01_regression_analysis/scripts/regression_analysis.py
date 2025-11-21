@@ -68,7 +68,7 @@ def predict(x: np.ndarray, w: np.ndarray) -> np.ndarray:
         予測値
     """
 
-    y_pred = w.T @ x
+    y_pred = x @ w
     return y_pred
 
 
@@ -87,11 +87,11 @@ def main():
 
     # バイアス項：要素1の行列，xの行数×1
     #bias = # [TASK] xの行数に合わせたバイアス項の列ベクトルを作成
-    bias = np.ones(x.shape[0])    
+    bias = np.ones((x.shape[0], 1))
 
     # 説明変数に切片列を追加して設計行列を作成
     #x = # [TASK] バイアス項の列を説明変数xの先頭に結合して設計行列を作成
-    x = (bias, x)
+    x = np.hstack((bias, x))
 
     # 回帰分析
     w = regression_analysis(x, y)
