@@ -60,9 +60,9 @@ class Perceptron():
         # 乱数生成器のインスタンスを生成
         rng = np.random.default_rng()
         # 重み(係数)をガウス分布に従う乱数で初期化
-        self.w = # [TASK] 初期の重みをガウス分布に従う乱数で初期化
+        self.w = rng.standard_normal((input_size, output_size))
         # バイアス(切片)をガウス分布に従う乱数で初期化
-        self.b = # [TASK] 初期のバイアスをガウス分布に従う乱数で初期化
+        self.b = rng.standard_normal(output_size)
 
         # 学習率を設定
         self.learning_rate = learning_rate
@@ -84,7 +84,8 @@ class Perceptron():
         self.x = x
 
         # 順伝播y = wx + bを計算
-        self.y = # [TASK] 順伝播を計算
+        # self.y = # [TASK] 順伝播を計算
+        self.y = x @ self.w + self.b
 
         return self.y
 
@@ -102,15 +103,19 @@ class Perceptron():
         """
 
         # 重みとバイアスの勾配を計算
-        g_w = # [TASK] 重みの勾配を計算
-        g_b = # [TASK] バイアスの勾配を計算
+        # g_w = # [TASK] 重みの勾配を計算
+        g_w = self.x.T @ grad
+        # g_b = # [TASK] バイアスの勾配を計算
+        g_b = np.sum(grad, axis=0)
 
         # 逆伝播する勾配を計算
-        g = # [TASK] 逆伝播で入力側に与える勾配情報を計算
+        g = grad @ self.w.T
 
         # 重みとバイアスの更新
-        self.w = # [TASK] 重みを更新
-        self.b = # [TASK] バイアスを更新
+        # self.w = # [TASK] 重みを更新
+        self.w = self.w - self.learning_rate * g_w
+        # self.b = # [TASK] バイアスを更新
+        self.b = self.b - self.learning_rate * g_b
 
         return g
 
@@ -178,7 +183,7 @@ def main():
     loss_function = MeanSquaredError()
 
     # 繰り返し学習する回数
-    max_iteration = 500
+    max_iteration = 10000
 
     # 誤差の履歴を保存するリストを初期化
     loss_list = []
