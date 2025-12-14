@@ -5,3 +5,6 @@
 3/3J_jikken/IDE/c_programming/testcase/
 *:Zone.Identifier
 *.asv
+
+.venv
+
