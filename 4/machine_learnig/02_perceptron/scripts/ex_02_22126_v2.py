@@ -173,13 +173,12 @@ def main():
     x = data[:, :-1]
     t = data[:, -1].reshape(-1, 1)
 
-    xmax = x.max()
-    # 列ごとの最大値で正規化
     x = x / x.max(axis=0)
     t = t / t.max(axis=0)
 
+
     # 学習率
-    learning_rate = 0.0001
+    learning_rate = 0.0000001
 
     # 単純パーセプトロンのインスタンスを生成
     perceptron = Perceptron(x.shape[1], 1, learning_rate=learning_rate)
@@ -217,8 +216,6 @@ def main():
     print(perceptron.w)
     print("バイアス")
     print(perceptron.b)
-    print(xmax)
-
 
     # グラフに描画(横軸が実測値，縦軸が予測値の散布図)
     # 直線上に点が分布していれば予測精度が高いことを示す
@@ -228,7 +225,7 @@ def main():
     plt.ylabel("Predicted Sales")
     plt.plot([y.min(), y.max()], [y.min(), y.max()], 'r--')
     plt.tight_layout()
-    plt.savefig('../outputs/advertising_actual_vs_predicted_2.png')
+    plt.savefig('../outputs/advertising_actual_vs_predicted_3.png')
 
     # 誤差の履歴をプロット
     plt.figure()
@@ -236,7 +233,7 @@ def main():
     plt.xlabel("Iteration")
     plt.ylabel("Mean Squared Error Loss")
     plt.tight_layout()
-    plt.savefig('../outputs/advertising_loss_history_2.png')
+    plt.savefig('../outputs/advertising_loss_history_3.png')
     
 
 if __name__ == "__main__":
