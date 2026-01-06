@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 int Matrix_Chain(int *row, int *column, int n) {
     int M[n][n];
