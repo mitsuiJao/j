@@ -1,0 +1,40 @@
+----------
+-- File Name : Exor_Ex.vhd
+-- Function : Operate the Logical EXOR for Two Input
+-- Author : name
+-- Rev and Date : 1.0 , 0000/00/00 , original source
+----------
+
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.std_logic_arith.all;
+use IEEE.std_logic_signed.all;
+
+
+entity Exor_Ex is
+
+	port (
+		A : in std_logic;
+		B : in std_logic;
+		Y : out std_logic
+	);
+	
+end Exor_Ex;
+
+
+architecture RTL of Exor_Ex is
+
+begin
+	LOGICAL_XOR : process(A, B)
+	begin
+
+		if (((A = '1') and (B = '0')) or ((A = '0') and (B = '1'))) then
+			Y <= '1';
+		else
+			Y <= '0';
+		end if;
+
+	end process;
+
+end RTL;  
