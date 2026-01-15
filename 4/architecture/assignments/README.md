@@ -7,7 +7,7 @@
 ```v
 library IEEE;                       -- ライブラリ
 
-entity Add is                       -- 入出力
+entity Add is                       -- 入出力 entity名（ファイル名一致）
     port (
         IN : in integer range 0 to 3;
         OUT
@@ -15,14 +15,14 @@ entity Add is                       -- 入出力
 end Add;                            -- entity名end
 
 architecture STRUCTURE of Add is    -- プログラムの中身, architecture名 of entity名 is
-    component Adder                 -- 呼び出すentity名
+    component Adder                 -- 呼び出すentity名（importみたいなやつ）
     port (
         INA :                       -- entityコピペ
     )
 
     signal data_intd : integer ...  -- ワイヤーみたいにつなぐ, tag名
 
-begin
+begin								-- ここからプログラムの動作
 
 	AD : Adder port map (           -- コンポーネント配置、インスタンス名 : entity名 port map
 		INA	=> INA,                 -- インスタンスポート => インスタンス外ポート（入出力関係ない）
@@ -39,7 +39,7 @@ end STRUCTURE;                      -- architecture名end
 ```
 
 - エンティティ名とファイル名は一致させるべき, 1対1（Javaのクラス名のように）
-- 呼び出し側は基本エンティティ単位（エンティティ名）
+- 呼び出しは基本エンティティ単位（ファイル名は影響しない）
 - architectureの`process`はその値が変更されたら実行する（感度リスト）
 
 ### 命名ケース
@@ -48,3 +48,4 @@ end STRUCTURE;                      -- architecture名end
 - port, generic : UPPER_SNAKE_CASE
 
 ## 備考
+
